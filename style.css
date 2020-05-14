@@ -1,0 +1,74 @@
+/*@@@@@@@@@@@@@@@@@@@@@@@@@   NOTIFICATION CSS STYLE @@@@@@@@@@@@@@@@@@  */
+
+.notification-wrap{
+	margin:0 auto;
+}
+.notification-wrap .icon{
+	position: relative;
+	height: 50px;
+	width: 50px;
+	font-size:30px;
+	margin: 0 auto;
+	text-align: center;
+	color: blue;
+}
+.notification-wrap .icon .fa-bell{
+	cursor: pointer;
+}
+.notification-wrap .dropdown{
+	position:fixed;
+	width:340px;
+	height:auto;
+	background-color:#ADD8E6;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.125);
+	margin:10px auto 0;
+	display: none;
+	margin-left:48%;
+}
+
+.notification-wrap .dropdown .notify-item{
+	display: flex;
+	align-items: center;
+	padding: 5px 0px;
+	border-bottom: 1px solid #dbdaff;
+}
+
+.notification-wrap .dropdown .notify-item:last-child{
+	border-bottom: 0px;
+
+}
+
+.notification-wrap .dropdown .notify-item .notify-image{
+	margin-right: 15px;
+
+}
+.notification-wrap .dropdown .notify-item .notify-info p span a{
+	color: #605dff;
+	margin-left:10px;
+}
+
+.notification-wrap .dropdown .notify-item .notify-info .notify-time{
+	color:#c5c5a6;
+	font-size:12px;
+}
+
+.notification-wrap .dropdown:before{
+	content: " ";
+	position: absolute;
+	top:-30px;
+	left:7%;
+	transform: translate(-50%);
+	border: 15px solid;
+	border-color: transparent transparent #ADD8E6 transparent;
+}
+
+.notification-wrap .dropdown.active{
+	display: block;
+}
+
+.my-custom-scrollbar {
+	position: relative;
+	height: 300px;
+	overflow: auto;
+}
