@@ -1,0 +1,526 @@
+/*@@@@@@@@@@@@@@@@@@@@@@@@@   NAVIGATION  CSS STYLE @@@@@@@@@@@@@@@@@@  */
+
+.navigation{
+	margin-top:100px;
+	margin-left:280px;
+	display:block;
+}
+
+
+.navigation .notify-item{
+	display:flex;
+	align-items: center;
+	margin:0 auto;
+	list-style: none;
+
+}
+.navigation .notify-item .notify-image{
+	padding: 0 50px;
+}
+.navigation .notify-item .notify-image img{
+	width:43px;
+	border-radius: 50%;
+}
+
+.navigation hr{
+	border-style: none;
+	border-top: solid;
+	border-color:#ddd;
+	border-width:2px;
+	margin-bottom: 0;
+	margin-bottom:-30px;
+	width:50%;
+	margin-left: 100px;
+}
+
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@  Personal-info  CSS STYLE @@@@@@@@@@@@@@@@@@  */
+
+
+.Personal-info {
+	margin-top:15px;
+	margin-left:350px;
+	display:block;
+
+	
+}
+.Personal-info .card{
+	box-shadow: 0px 2px 2px #3D8BF4;
+	border:none;
+}
+.Personal-info .headingpart{
+	background-color:#3D8BF4;
+	text-align: center;
+	color:#fff;
+	padding-top:10px;
+	height:70px;	
+
+}
+.needs-validation{
+	margin-top: 10px;
+}
+.Personal-info .dropdown:before{
+	content: " ";
+	position: absolute;
+	top:-28px;
+	left:5%;
+	transform: translate(-50%);
+	border: 15px solid;
+	border-color: transparent transparent #3D8BF4 transparent;
+}
+
+.Personal-info .needs-validation  label{
+    display: block;
+    margin-left:40px;
+    margin-top:5px;
+}
+.Personal-info .needs-validation .form-row input{
+    padding:0px 0px;
+	margin:0px 0px 30px 45px;
+	border-width:0px 0px 3px 0px;
+	outline: none;
+}
+.Personal-info .button {
+  background-color: #3D8BF4; /* Green */
+  border: none;
+  color: white;
+  padding:15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-size:10px;
+  float: right;
+  margin:5px 20px 15px 15px;
+}
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@  EXPERIENCE  CSS STYLE @@@@@@@@@@@@@@@@@@  */
+
+
+.experiance{
+	margin-top:16px;
+	margin-left:350px;
+	display: none;
+
+}
+.experiance .card{
+	border: none;
+	box-shadow: 0px 2px 2px #ffce42;
+}
+.experiance .headingpart{	
+	background-color:#ffce42;
+	text-align: center;
+	color:#000;
+	padding-top:10px;
+	height:70px;
+}
+		
+.experiance .semihead{
+	margin:30px auto;
+	text-align: center;
+}
+
+.experiance .card .mainform{
+	margin-top:10px;
+	margin-bottom:50px;
+	margin-left:100px;
+}
+.experiance .card .mainform .part1 {
+	margin-top:20px;
+	height:50px;
+	width: 90%;
+	text-align:left;
+	padding-top:9px;
+	padding-left:10px;
+	cursor: pointer;
+	box-shadow: 0 5px 3px 5px rgba(0,0,0,0.125);
+
+}
+.experiance .card .mainform .part1 span{
+	float: right; 
+	font-size:35px;
+	margin-right:10px;
+	margin-top:-8px;
+}
+.experiance .dropdown:before{
+	content: " ";
+	position: absolute;
+	top:-28px;
+	left:31%;
+	transform: translate(-40%);
+	border: 15px solid;
+	border-color: transparent transparent #ffce42 transparent;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@  Education  CSS STYLE @@@@@@@@@@@@@@@@@@  */
+
+
+.education{
+	margin-top:16px;
+	margin-left:350px;
+	display: none;
+
+}
+.education .card{
+	border: none;
+	box-shadow: 0px 2px 2px #20B2AA;
+}
+.education .headingpart{	
+	background-color:#20B2AA;
+	text-align: center;
+	color:#000;
+	padding-top:10px;
+	height:70px;
+}
+		
+.education .semihead{
+	margin:30px auto;
+	text-align: center;
+}
+
+.education .card .mainform{
+	margin-top:10px;
+	margin-bottom:50px;
+	margin-left:100px;
+}
+.education .card .mainform .part1{
+	margin-top:20px;
+	height:50px;
+	width: 90%;
+	text-align:left;
+	padding-left:10px;
+	padding-top:7px;
+	cursor: pointer;
+	color: #000;
+	box-shadow: -10px 0px 1px 1px  #20B2AA;
+
+}
+.education .card .mainform .part1 span{
+	float: right; 
+	font-size:35px;
+	margin-right:10px;
+	margin-top:-8px;
+}
+.education .dropdown:before{
+	content: " ";
+	position: absolute;
+	top:-28px;
+	left:18%;
+	transform: translate(-40%);
+	border: 15px solid;
+	border-color: transparent transparent #20B2AA transparent;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@  SKILL  CSS STYLE @@@@@@@@@@@@@@@@@@  */
+
+
+.skill{
+	margin-top:16px;
+	margin-left:350px;
+	display: none;
+
+
+}
+.skill .card{
+	border: none;
+	box-shadow: 0px 2px 2px #DC143C;
+}
+.skill .headingpart{
+	background-color:#DC143C;
+	text-align: center;
+	color:#fff;
+	padding-top:10px;
+	height:70px;
+
+}
+.skill .semihead{
+	margin:30px auto;
+	text-align: center;
+
+}
+.skill .mainform {
+	margin-left:50px;
+	
+}
+
+.skill .mainform .col-md-3{
+	border:solid 1px #45b3e0;
+	margin: 12px 12px;
+	color: #45b3e0;
+	width:40px;
+	box-shadow: 0px 0px 5px #61C5FA;
+	text-align:center;
+}
+.skill .mainform .col-md-3  p{
+	margin-top:5px;
+}
+.skill .card .input-section input[type="text"]{
+    width: 77%;
+	margin:20px 25px 50px 60px;
+	border-width:0px 0px 3px 0px;
+	outline: none;
+}
+.skill .input-section input::placeholder {
+	padding-left:10px;
+	color:#ddd;
+}
+.skill .dropdown:before{
+	content: " ";
+	position: absolute;
+	top:-28px;
+	left:44%;
+	transform: translate(-40%);
+	border:15px solid;
+	border-color: transparent transparent #DC143C transparent;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@  SAMPLE-INFO CSS STYLE @@@@@@@@@@@@@@@@@@  */
+
+
+.sample-info{
+	margin-top:16px;
+	margin-left:350px;
+	display: none;
+
+
+}
+.sample-info .card{
+	border: none;
+	box-shadow: 0px 4px 4px #FF7F50;
+}
+
+.sample-info .headingpart{
+	background-color:#FF7F50;
+	text-align: center;
+	color:#fff;
+	padding-top:10px;
+	height:70px;
+}
+.sample-info .semihead{
+	margin:30px auto;
+	text-align: center;
+
+}
+
+.sample-info .input-section input[type="text"]{
+    width:80%;
+    display: block;
+    padding:0px 0px;
+	margin:0px 0px 30px 70px;
+	border-width:0px 0px 3px 0px;
+	outline: none;
+}
+.sample-info .input-section label{
+	font-weight:bold;
+	margin:0px 0px 10px 70px;
+}
+.sample-info .input-section input::placeholder {
+	padding-left:10px;
+	color:#ddd;
+}
+
+.sample-info .dropdown:before{
+	content: " ";
+	position: absolute;
+	top:-28px;
+	left:56%;
+	transform: translate(-40%);
+	border:15px solid;
+	border-color: transparent transparent #FF7F50 transparent;
+}
+.sample-info .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding:15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-size:10px;
+  float: right;
+  margin:5px 20px 15px 15px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@  Graduation  CSS STYLE @@@@@@@@@@@@@@@@@@  */
+
+
+.graduation {
+	margin-top:15px;
+	margin-left:350px;
+	display:none;
+	
+}
+.Senior-secondary{
+	margin-top:15px;
+	margin-left:350px;
+	display:none;
+}
+.secondary{
+	margin-top:15px;
+	margin-left:350px;
+	display:none;
+}
+.post-grad{
+	margin-top:15px;
+	margin-left:350px;
+	display:none;
+
+}
+.diploma{
+	margin-top:15px;
+	margin-left:350px;
+	display:none;
+}
+.diploma .card,.Senior-secondary .card,.post-grad .card,.Senior-secondary .card ,.secondary .card,.Senior-secondary .card,.graduation .card{
+	box-shadow: 0px 4px 4px #800080;
+	border:none;
+}
+.diploma .headingpart,.post-grad .headingpart,.secondary .headingpart,.Senior-secondary .headingpart,.graduation .headingpart{
+	background-color:#800080;
+	text-align: center;
+	color:#fff;
+	padding-top:10px;
+	height:70px;	
+
+}
+.needs-validation{
+	margin-top:30px;
+}
+.diploma .needs-validation .form-check,.post-grad .needs-validation .form-check,.secondary .needs-validation .form-check,.Senior-secondary .needs-validation .form-check, .graduation .needs-validation .form-check{
+	margin-left: 50px;
+}
+.diploma .needs-validation  label.mainlabel,.post-grad .needs-validation  label.mainlabel,.secondary .needs-validation  label.mainlabel,.Senior-secondary .needs-validation  label.mainlabel, .graduation .needs-validation  label.mainlabel{
+    display: block;
+    margin-left:40px;
+    margin-top:5px;
+    font-weight:bold;
+}
+.diploma .needs-validation .form-row input[type="text"],.post-grad .needs-validation .form-row input[type="text"],.secondary .needs-validation .form-row input[type="text"],.Senior-secondary .needs-validation .form-row input[type="text"],.graduation .needs-validation .form-row input[type="text"]{
+    padding:0px 0px;
+	margin:0px 0px 12px 40px;
+	border-width:0px 0px 3px 0px;
+	outline: none;
+}
+.diploma .needs-validation .form-row input[type="text"]::placeholder,.post-grad .needs-validation .form-row input[type="text"]::placeholder,.secondary .needs-validation .form-row input[type="text"]::placeholder ,.Senior-secondary .needs-validation .form-row input[type="text"]::placeholder ,.graduation .needs-validation .form-row input[type="text"]::placeholder{
+	padding-left:14px;
+	font-size:13px;
+}
+.diploma .button,.post-grad .button ,.secondary .button ,.Senior-secondary .button ,.graduation .button {
+  background-color: #800080; /* Green */
+  border: none;
+  color: white;
+  padding:15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-size:10px;
+  float: right;
+  margin:5px 20px 15px 15px;
+}
+
+
+
+
+
+
+
+.internship{
+	margin-top:15px;
+	margin-left:350px;
+	display:none;
+}
+.job{
+	margin-top:15px;
+	margin-left:350px;
+	display:none;
+}
+.job .card,.internship .card{
+	box-shadow: 0px 4px 4px #ffce42;
+	border:none;
+}
+.job .headingpart,.internship .headingpart{
+	background-color:#ffce42;
+	text-align: center;
+	color:#fff;
+	padding-top:10px;
+	height:70px;	
+
+}
+.job .needs-validation .form-check,.internship .needs-validation .form-check{
+	margin-left: 50px;
+}
+.job .needs-validation  label.mainlabel,.internship .needs-validation  label.mainlabel{
+	display: block;
+    margin-left:40px;
+    margin-top:5px;
+    font-weight:bold;
+
+}
+.job .needs-validation .form-row input[type="text"],.internship .needs-validation .form-row input[type="text"]{
+	padding:0px 0px;
+	margin:0px 0px 12px 40px;
+	border-width:0px 0px 3px 0px;
+	outline: none;
+}
+.job .needs-validation .form-row input[type="text"]::placeholder,.internship .needs-validation .form-row input[type="text"]::placeholder{
+	padding-left:14px;
+	font-size:13px;
+}
+
+.job .needs-validation .form-row textarea,.internship .needs-validation .form-row textarea{
+	padding:0px 0px;
+	margin:0px 0px 12px 40px;
+	
+}
+.job .needs-validation .form-row textarea::placeholder,.internship .needs-validation .form-row textarea::placeholder{
+	padding-left:14px;
+	font-size:13px;
+	padding-top: 5px;
+}
+.job .button,.internship .button{
+  background-color: #ffce42; /* Green */
+  border: none;
+  color: white;
+  padding:15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-size:10px;
+  float: right;
+  margin:5px 20px 15px 15px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

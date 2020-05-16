@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Campus{x}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+  
+	<link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+	<script >
+		$(document).ready(function(){
+			$(".icon .fa-bell").click(function(){
+				$(".dropdown").toggleClass("active");
+			})
+		})
+
+
+		$(document).ready(function(){
+			$(".navigation .notify-item .personal-information").click(function(){
+				$(".experiance").css("display", "none");
+				$(".skill").css("display", "none");
+				$(".sample-info").css("display", "none");
+				$(".education").css("display", "none");
+				$(".Personal-info").css("display", "block");
+				
+			})
+		})
+
+		$(document).ready(function(){
+			$(".navigation .notify-item .experiance-detail").click(function(){
+				$(".Personal-info").css("display", "none");
+				$(".skill").css("display", "none");
+				$(".sample-info").css("display", "none");
+				$(".education").css("display", "none");
+				$(".experiance").css("display", "block");
+			})
+		})
+
+		$(document).ready(function(){
+			$(".navigation .notify-item .skill-info").click(function(){
+				$(".Personal-info").css("display", "none");
+				$(".experiance").css("display", "none");
+				$(".sample-info").css("display", "none");
+				$(".education").css("display", "none");
+				$(".skill").css("display", "block");
+			})
+		})
+
+		$(document).ready(function(){
+			$(".navigation .notify-item .sample-information").click(function(){
+				$(".Personal-info").css("display", "none");
+				$(".experiance").css("display", "none");
+				$(".skill").css("display", "none");
+				$(".education").css("display", "none");
+				$(".sample-info").css("display", "block");
+			})
+		})
+
+		$(document).ready(function(){
+			$(".navigation .notify-item .education-detail").click(function(){
+				$(".Personal-info").css("display", "none");
+				$(".experiance").css("display", "none");
+				$(".skill").css("display", "none");
+				$(".sample-info").css("display", "none");
+				$(".education").css("display", "block");
+			})
+		})
+
+		$(document).ready(function(){
+			$(".education .mainform .graduation-info").click(function(){
+				$(".navigation").css("display", "none");
+				$(".education").css("display", "none");
+				$(".graduation").css("display", "block");
+			})
+		})
+		$(document).ready(function(){
+			$(".graduation .headingpart .close").click(function(){
+				$(".navigation").css("display", "block");
+				$(".graduation").css("display", "none");
+				$(".education").css("display", "block");
+			})
+		})
+
+		$(document).ready(function(){
+			$(".education .mainform .Senior").click(function(){
+				$(".navigation").css("display", "none");
+				$(".education").css("display", "none");
+				$(".Senior-secondary").css("display", "block");
+			})
+		})
+		$(document).ready(function(){
+			$(".Senior-secondary .headingpart .close").click(function(){
+				$(".navigation").css("display", "block");
+				$(".Senior-secondary").css("display", "none");
+				$(".education").css("display", "block");
+			})
+		})
+
+		$(document).ready(function(){
+			$(".education .mainform .Secondary-info").click(function(){
+				$(".navigation").css("display", "none");
+				$(".education").css("display", "none");
+				$(".secondary").css("display", "block");
+			})
+		})
+		$(document).ready(function(){
+			$(".secondary .headingpart .close").click(function(){
+				$(".navigation").css("display", "block");
+				$(".secondary").css("display", "none");
+				$(".education").css("display", "block");
+			})
+		})
+		$(document).ready(function(){
+			$(".education .mainform .Post-detail").click(function(){
+				$(".navigation").css("display", "none");
+				$(".education").css("display", "none");
+				$(".post-grad").css("display", "block");
+			})
+		})
+		$(document).ready(function(){
+			$(".post-grad .headingpart .close").click(function(){
+				$(".navigation").css("display", "block");
+				$(".post-grad").css("display", "none");
+				$(".education").css("display", "block");
+			})
+		})
+
+		$(document).ready(function(){
+			$(".education .mainform .diploma-info").click(function(){
+				$(".navigation").css("display", "none");
+				$(".education").css("display", "none");
+				$(".diploma").css("display", "block");
+			})
+		})
+		$(document).ready(function(){
+			$(".diploma .headingpart .close").click(function(){
+				$(".navigation").css("display", "block");
+				$(".diploma").css("display", "none");
+				$(".education").css("display", "block");
+			})
+		})
+
+		$(document).ready(function(){
+			$(".experiance .mainform .internship-info").click(function(){
+				$(".navigation").css("display", "none");
+				$(".experiance").css("display", "none");
+				$(".internship").css("display", "block");
+			})
+		})
+		$(document).ready(function(){
+			$(".internship .headingpart .close").click(function(){
+				$(".internship").css("display", "none");
+				$(".navigation").css("display", "block");
+				$(".experiance").css("display", "block");
+			})
+		})
+
+		$(document).ready(function(){
+			$(".experiance .mainform .job-info").click(function(){
+				$(".navigation").css("display", "none");
+				$(".experiance").css("display", "none");
+				$(".job").css("display", "block");
+			})
+		})
+		$(document).ready(function(){
+			$(".job .headingpart .close").click(function(){
+				$(".job").css("display", "none");
+				$(".navigation").css("display", "block");
+				$(".experiance").css("display", "block");
+			})
+		})
+
+
+
+
+	</script>
+
+
+	
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+<div class="navigation">
+		<hr>
+		<ul class="notify-item">
+
+		        <li class="notify-image personal-information">
+		          <img src="images/user.png" alt="profile-pic">			
+		        </li>
+
+		        <li class="notify-image education-detail">
+		          <img src="images/education.png" alt="profile-pic" >
+		        </li>
+
+		        <li class="notify-image experiance-detail">
+		          <img src="images/experience.png" alt="profile-pic">
+		        </li>
+
+		        <li class="notify-image skill-info">
+		          <img src="images/skill.png" alt="profile-pic" >
+		        </li>
+
+		        <li class="notify-image sample-information">
+		          <img src="images/sample.jpg" alt="profile-pic">
+		        </li>
+		        
+
+		 </ul>
+		
+	</div>
+
+
+<div class="Personal-info">
+	<div class="dropdown">
+	<div class="card" style="width:42rem;">	
+		<div class="headingpart">
+			<h2>Personal Detail</h2>
+		</div>
+		
+		<form class="needs-validation" novalidate  method="Post" action="person-detail">
+			<label>Name*:-</label>
+			 <div class="form-row name-info">
+			    <div class="col-md-2 ">
+			      <input type="text" id="validationCustom01" placeholder="Mr" style="width:70px;" required>
+			    </div>
+			   
+			   	<div class="col-md-3">
+			      <input type="text" id="validationCustom01" placeholder="First name"  required>
+			    </div>
+			    <div class="col-md-3">
+			      <input type="text" id="validationCustom01" placeholder="Last name" style="margin-left:70px;" required>
+			    </div>
+			</div>
+			<label>Mobile Number*:-</label>
+			<div class="form-row">
+			    <div class="col-md-1">
+			      <input type="text" id="validationCustom01" style="width:100px;" placeholder="First name" value="+91" required>
+			    </div>
+			    <div class="col-md-1 ">
+			    </div>
+			   	<div class="col-md-7 ">
+			      <input type="text" id="validationCustom01" placeholder="9000123456" required>
+			    </div>
+			</div>
+			<label>Current City*:-</label>
+			<div class="form-row">
+			    <div class="col-md-12 ">
+			      <input type="text" id="validationCustom01" placeholder="@ Start typing" style="width:400px;" required>
+			    </div>
+			</div>
+
+			<label>Add 2nd City:-</label>
+			<div class="form-row">
+			    <div class="col-md-12">
+			    	<p style="margin-left:50px; font-size:13px;">If you study in one city (say Delhi) but are from a different city (say Chennai), fill this to be considered for opportunities in both</p>
+			      <input type="text" id="validationCustom01" placeholder="@ Start typing" style="width:400px;" required>
+			    </div>
+			</div>
+			<div class="but">
+				<button type="submit" class="button">Next</button>
+			</div>
+		</form>
+		</div>
+	</div>			
+</div>	
+
+
+<div class="education">
+	<div class="dropdown">
+	<div class="card" style="width:40rem;">
+		<div class="headingpart">
+			<h2>Education</h2>
+		</div>
+		<div class="semihead">
+			<p>Do you have any past internship or job experience?</p>
+		</div>
+		<div class="mainform">
+			<div class="part1 graduation-info">
+				<h5>Graduation<span>+</span></h5>
+			</div>
+			<div class="part1 Senior">
+				<h5>XII (Senior Secondary)<span>+</span></h5>
+			</div>
+			<div class="part1 Secondary-info">
+				<h5>X (Secondary)<span>+</span></h5>
+			</div>
+			<div class="part1 diploma-info">
+				<h5>Diploma<span>+</span></h5>
+			</div>
+			<div class="part1 Post-detail">
+				<h5>Post Graduation<span>+</span></h5>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+</div>		
+
+
+<div class="experiance">
+	<div class="dropdown">
+	<div class="card" style="width:40rem;">
+		<div class="headingpart">
+			<h2>Experiance</h2>
+		</div>
+		<div class="semihead">
+			<p>Do you have any past internship or job experience?</p>
+		</div>
+		<div class="mainform">
+			<div class="part1 internship-info">
+				<h5>Internship<span>+</span></h5>
+
+			</div>
+			<div class=" part1 job-info">
+				<h5>Job<span>+</span></h5>
+
+			</div>
+		</div>
+	</div>
+	</div>
+	
+</div>		
+
+
+<div class="skill">
+	<div class="dropdown">
+		<div class="card" style="width:45rem;">
+			<div class="headingpart">
+				<h2>Skill</h2>	
+			</div>
+			<div class="semihead">
+				<h4>What skills do you have?</h4>
+				<p>You can choose from relevant skills mentioned below:</p>
+			</div>
+			
+			<div class="mainform">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3"><p>web Design</p></div>
+						<div class="col-md-3"><p>web Development</p></div>
+						<div class="col-md-3"><p>Data Anaysis</p></div>
+						<div class="col-md-3"><p>Graphics</p></div>
+						<div class="col-md-3"><p>Data Science</p></div>
+						<div class="col-md-3"><p>Python</p></div>
+					</div>
+				</div>	
+			</div>
+
+			<div class="input-section">
+				<input type="text" name="skill-inp"  placeholder="add more skill here eg-react">
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+<div class="sample-info">
+	<div class="dropdown">
+		<div class="card" style="width:40rem;">
+			<div class="headingpart">
+				<h2>Work Sample</h2>	
+			</div>
+			<div class="semihead">
+				<h4>Add your work sample links here (if any) </h4>
+				
+			</div>
+			<form method="Post" action="/sample">
+				<div class="input-section" method="Post">
+					<label>Blog Link:-</label>
+					<input type="text" name="skill-inp"  placeholder="http://myblog.com">
+					<label>Github profile:-</label>
+					<input type="text" name="skill-inp"  placeholder="htt://github.com/my_profile">
+					<label>Linkdin Profile:-</label>
+					<input type="text" name="skill-inp"  placeholder="http://linkdin.com/my-profile">
+					<label>portfolio Link:-</label>
+					<input type="text" name="skill-inp"  placeholder="http://myportfolio.com">
+					<div class="but">
+						<button type="submit" class="button">Next</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+
+	</div>
+</div>
+
+
+
+<div class="graduation">
+	<div class="dropdown">
+	<div class="card" style="width:40rem;">	
+		<div class="headingpart">
+			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
+			<h2>Graduation Details</h2>
+		</div>
+		
+		<form class="needs-validation" novalidate  method="Post" action="person-detail">
+
+			<label class="mainlabel">Graduation Status:-</label>
+			 <div class="form-row name-info mb-3">
+			    <div class="col-md-3 ">
+			        <div class="form-check">
+					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  <label class="form-check-label" for="exampleRadios1">
+					    Pursuing
+					  </label>
+					</div>
+			    </div>
+			   	<div class="col-md-3 ">
+			      <div class="form-check" style="margin-left:200px;">
+					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  <label class="form-check-label" for="exampleRadios1">
+					    Completed
+					  </label>
+					</div>
+			    </div>
+			</div>
+
+			<label class="mainlabel">College*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7 mb-3">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-IIT Delhi" style="width:90%" required>
+			    </div>
+			</div>
+			<div class="form-row name-info mb-3">
+			    <div class="col-md-4 ">
+			    	<label class="mainlabel">Start Year*:-</label>
+			      <input type="text" id="validationCustom01" placeholder="2020" required>
+			    </div>
+			   	<div class="col-md-4" style="margin-left: 70px;">
+			    	<label class="mainlabel">End Year*:-</label>
+			      <input type="text" id="validationCustom01" placeholder="2024" required>
+			    </div>
+			</div>
+
+			<div class="form-row name-info mb-3">
+			    <div class="col-md-4 ">
+			    	<label class="mainlabel">Degree*:-</label>
+			      <input type="text" id="validationCustom01" placeholder="Ex-Btech" required>
+			    </div>
+			   	<div class="col-md-4" style="margin-left: 70px;">
+			    	<label class="mainlabel">Stream:-</label>
+			      <input type="text" id="validationCustom01" placeholder="Ex-Information Technology" required>
+			    </div>
+			</div>
+			<div class="form-row name-info mb-3">
+			    <div class="col-md-4 ">
+			    	<label class="mainlabel">Performance Scale:-</label>
+			      <input type="text" id="validationCustom01" placeholder="Cgpa" required>
+			    </div>
+			   	<div class="col-md-4" style="margin-left: 70px;">
+			    	<label class="mainlabel">Performance:-</label>
+			      <input type="text" id="validationCustom01" placeholder="your score" required>
+			    </div>
+			</div>
+			
+			<div class="but">
+				<button type="submit" class="button">Next</button>
+			</div>
+		</form>
+		</div>
+	</div>			
+</div>	
+
+
+
+<div class="Senior-secondary">
+	<div class="dropdown">
+	<div class="card" style="width:40rem;">	
+		<div class="headingpart">
+			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
+			<h2>XII (Senior-secondary)</h2>
+		</div>
+		
+		<form class="needs-validation" novalidate  method="Post" action="person-detail">
+
+			<label class="mainlabel">Intermediate Status:-</label>
+			 <div class="form-row name-info">
+			    <div class="col-md-3 ">
+			        <div class="form-check">
+					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  <label class="form-check-label" for="exampleRadios1">
+					    Pursuing
+					  </label>
+					</div>
+			    </div>
+			   	<div class="col-md-3 ">
+			      <div class="form-check" style="margin-left:200px;">
+					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  <label class="form-check-label" for="exampleRadios1">
+					    Completed
+					  </label>
+					</div>
+			    </div>
+			</div>
+
+			<label class="mainlabel">School*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7 ">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-Dav Public School" style="width:90%" required>
+			    </div>
+			</div>
+			<label class="mainlabel">Board:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7 ">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-CBSE" style="width:90%" required>
+			    </div>
+			</div>
+			<label class="mainlabel">Year of Completion*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7 ">
+			      <input type="text" id="validationCustom01" placeholder="choose year" style="width:90%" required>
+			    </div>
+			</div>
+			<div class="form-row name-info">
+			    <div class="col-md-4 ">
+			    	<label class="mainlabel">Performance Scale:-</label>
+			      <input type="text" id="validationCustom01" placeholder="percentage" required>
+			    </div>
+			   	<div class="col-md-4" style="margin-left: 70px;">
+			    	<label class="mainlabel">Performance:-</label>
+			      <input type="text" id="validationCustom01" placeholder="your score" required>
+			    </div>
+			</div>
+			<label class="mainlabel">Stream*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7">
+			      <input type="text" id="validationCustom01" placeholder="choose stream" style="width:90%" required>
+			    </div>
+			</div>
+			
+			
+			<div class="but">
+				<button type="submit" class="button">Next</button>
+			</div>
+		</form>
+		</div>
+	</div>			
+</div>	
+
+
+<div class="secondary">
+	<div class="dropdown">
+	<div class="card" style="width:40rem;">	
+		<div class="headingpart">
+			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
+			<h2> X (Secondary) Detail</h2>
+		</div>
+		
+		<form class="needs-validation" novalidate  method="Post" action="person-detail">
+
+			<label class="mainlabel">matriculation Status:-</label>
+			 <div class="form-row name-info">
+			    <div class="col-md-3 ">
+			        <div class="form-check">
+					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  <label class="form-check-label" for="exampleRadios1">
+					    Pursuing
+					  </label>
+					</div>
+			    </div>
+			   	<div class="col-md-3 ">
+			      <div class="form-check" style="margin-left:200px;">
+					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  <label class="form-check-label" for="exampleRadios1">
+					    Completed
+					  </label>
+					</div>
+			    </div>
+			</div>
+
+			<label class="mainlabel">School*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7 ">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-Dav Public School" style="width:90%" required>
+			    </div>
+			</div>
+			<label class="mainlabel">Board:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7 ">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-CBSE" style="width:90%" required>
+			    </div>
+			</div>
+			<label class="mainlabel">Year of Completion*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7 ">
+			      <input type="text" id="validationCustom01" placeholder="choose year" style="width:90%" required>
+			    </div>
+			</div>
+			<div class="form-row name-info">
+			    <div class="col-md-4 ">
+			    	<label class="mainlabel">Performance Scale:-</label>
+			      <input type="text" id="validationCustom01" placeholder="Cgpa" required>
+			    </div>
+			   	<div class="col-md-4" style="margin-left: 70px;">
+			    	<label class="mainlabel">Performance:-</label>
+			      <input type="text" id="validationCustom01" placeholder="your score" required>
+			    </div>
+			</div>
+			<label class="mainlabel">Stream*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7">
+			      <input type="text" id="validationCustom01" placeholder="choose stream" style="width:90%" required>
+			    </div>
+			</div>
+			
+			
+			<div class="but">
+				<button type="submit" class="button">Next</button>
+			</div>
+		</form>
+		</div>
+	</div>			
+</div>	
+
+
+<div class="post-grad">
+	<div class="dropdown">
+	<div class="card" style="width:40rem;">	
+		<div class="headingpart">
+			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
+			<h2>Post Graduation Details</h2>
+		</div>
+		
+		<form class="needs-validation" novalidate  method="Post" action="person-detail">
+
+			<label class="mainlabel">Post Graduation Status:-</label>
+			 <div class="form-row name-info mb-3">
+			    <div class="col-md-3 ">
+			        <div class="form-check">
+					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  <label class="form-check-label" for="exampleRadios1">
+					    Pursuing
+					  </label>
+					</div>
+			    </div>
+			   	<div class="col-md-3 ">
+			      <div class="form-check" style="margin-left:200px;">
+					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  <label class="form-check-label" for="exampleRadios1">
+					    Completed
+					  </label>
+					</div>
+			    </div>
+			</div>
+
+			<label class="mainlabel">College*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7 mb-3">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-Delhi Institute of Management" style="width:90%" required>
+			    </div>
+			</div>
+			<div class="form-row name-info mb-3">
+			    <div class="col-md-4 ">
+			    	<label class="mainlabel">Start Year*:-</label>
+			      <input type="text" id="validationCustom01" placeholder="2020" required>
+			    </div>
+			   	<div class="col-md-4" style="margin-left: 70px;">
+			    	<label class="mainlabel">End Year*:-</label>
+			      <input type="text" id="validationCustom01" placeholder="2024" required>
+			    </div>
+			</div>
+
+			<div class="form-row name-info mb-3">
+			    <div class="col-md-4 ">
+			    	<label class="mainlabel">Degree*:-</label>
+			      <input type="text" id="validationCustom01" placeholder="Ex-Btech" required>
+			    </div>
+			   	<div class="col-md-4" style="margin-left: 70px;">
+			    	<label class="mainlabel">Stream:-</label>
+			      <input type="text" id="validationCustom01" placeholder="Ex-Information Technology" required>
+			    </div>
+			</div>
+			<div class="form-row name-info mb-3">
+			    <div class="col-md-4 ">
+			    	<label class="mainlabel">Performance Scale:-</label>
+			      <input type="text" id="validationCustom01" placeholder="Cgpa" required>
+			    </div>
+			   	<div class="col-md-4" style="margin-left: 70px;">
+			    	<label class="mainlabel">Performance:-</label>
+			      <input type="text" id="validationCustom01" placeholder="your score" required>
+			    </div>
+			</div>
+			
+			<div class="but">
+				<button type="submit" class="button">Next</button>
+			</div>
+		</form>
+		</div>
+	</div>			
+</div>	
+
+
+<div class="diploma">
+	<div class="dropdown">
+	<div class="card" style="width:40rem;">	
+		<div class="headingpart">
+			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
+			<h2>Diploma details</h2>
+		</div>
+		
+		<form class="needs-validation" novalidate  method="Post" action="person-detail">
+
+			<label class="mainlabel">Diploma Status:-</label>
+			 <div class="form-row name-info mb-3">
+			    <div class="col-md-3 ">
+			        <div class="form-check">
+					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  <label class="form-check-label" for="exampleRadios1">
+					    Pursuing
+					  </label>
+					</div>
+			    </div>
+			   	<div class="col-md-3 ">
+			      <div class="form-check" style="margin-left:200px;">
+					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  <label class="form-check-label" for="exampleRadios1">
+					    Completed
+					  </label>
+					</div>
+			    </div>
+			</div>
+
+			<label class="mainlabel">College*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7 mb-3">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-IGNOU" style="width:90%" required>
+			    </div>
+			</div>
+			<div class="form-row name-info mb-3">
+			    <div class="col-md-4 ">
+			    	<label class="mainlabel">Start Year*:-</label>
+			      <input type="text" id="validationCustom01" placeholder="2020" required>
+			    </div>
+			   	<div class="col-md-4" style="margin-left: 70px;">
+			    	<label class="mainlabel">End Year*:-</label>
+			      <input type="text" id="validationCustom01" placeholder="2024" required>
+			    </div>
+			</div>
+
+			<div class="form-row name-info mb-3">
+			   	<div class="col-md-8">
+			    	<label class="mainlabel">Stream:-</label>
+			      <input type="text" id="validationCustom01" placeholder="Ex-Creative writing" style="width:80%" required>
+			    </div>
+			</div>
+			<div class="form-row name-info mb-3">
+			    <div class="col-md-4 ">
+			    	<label class="mainlabel">Performance Scale:-</label>
+			      <input type="text" id="validationCustom01" placeholder="Cgpa" required>
+			    </div>
+			   	<div class="col-md-4" style="margin-left: 70px;">
+			    	<label class="mainlabel">Performance:-</label>
+			      <input type="text" id="validationCustom01" placeholder="your score" required>
+			    </div>
+			</div>
+			
+			<div class="but">
+				<button type="submit" class="button">Next</button>
+			</div>
+		</form>
+		</div>
+	</div>			
+</div>	
+
+
+
+
+<div class="internship">
+	<div class="dropdown">
+	<div class="card" style="width:40rem;">	
+		<div class="headingpart">
+			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
+			<h2>Internship details</h2>
+		</div>
+		
+		<form class="needs-validation" novalidate  method="Post" action="person-detail">
+
+			<label class="mainlabel">Profile*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-9 mb-1">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-Developer" style="width:90%" required>
+			    </div>
+			</div>
+
+			<label class="mainlabel">Organisation*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-9 mb-1">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-CampusX" style="width:90%" required>
+			    </div>
+			</div>
+
+			<label class="mainlabel">Location*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-9 mb-1">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-New Delhi" style="width:90%" required>
+			    </div>
+			</div>
+			<div class="form-row name-info mb-1">
+			    <div class="col-md-4 ">
+			    	<label class="mainlabel">Start Date*:-</label>
+			      <input type="text" id="validationCustom01" placeholder="2020" required>
+			    </div>
+			   	<div class="col-md-4" style="margin-left: 70px;">
+			    	<label class="mainlabel">End date*:-</label>
+			      <input type="text" id="validationCustom01" placeholder="2024" required>
+			    </div>
+			</div>
+			<label class="mainlabel">Description:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7 mb-1">
+			     <textarea class="form-control" rows="3" id="comment" placeholder="Short description of work" ></textarea>
+			    </div>
+			</div>
+			
+			<div class="but">
+				<button type="submit" class="button" >Next</button>
+			</div>
+		</form>
+		</div>
+	</div>			
+</div>	
+
+
+<div class="job">
+	<div class="dropdown">
+	<div class="card" style="width:40rem;">	
+		<div class="headingpart">
+			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
+			<h2>Job Detail</h2>
+		</div>
+		
+		<form class="needs-validation" novalidate  method="Post" action="person-detail">
+
+			<label class="mainlabel">Profile*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-9 mb-1">
+			      <input type="text" id="validationCustom01" placeholder="Ex:- sales & marketing" style="width:90%" required>
+			    </div>
+			</div>
+
+			<label class="mainlabel">Organisation*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-9 mb-1">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-CampusX" style="width:90%" required>
+			    </div>
+			</div>
+
+			<label class="mainlabel">Location*:-</label>
+			<div class="form-row">
+			   	<div class="col-md-9 mb-1">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-Kolkata,west Bengal" style="width:90%" required>
+			    </div>
+			</div>
+			<div class="form-row name-info mb-1">
+			    <div class="col-md-4 ">
+			    	<label class="mainlabel">Start Date*:-</label>
+			      <input type="text" id="validationCustom01" placeholder="2020" required>
+			    </div>
+			   	<div class="col-md-4" style="margin-left: 70px;">
+			    	<label class="mainlabel">End date*:-</label>
+			      <input type="text" id="validationCustom01" placeholder="2024" required>
+			    </div>
+			</div>
+			<label class="mainlabel">Description:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7 mb-1">
+			     <textarea class="form-control" rows="3" id="comment" placeholder="Short description of work" ></textarea>
+			    </div>
+			</div>
+			
+			<div class="but">
+				<button type="submit" class="button" >Next</button>
+			</div>
+		</form>
+		</div>
+	</div>			
+</div>	
+
+
+
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+</body>
+</html>
