@@ -176,6 +176,15 @@
 
 
 
+		$(document).ready(function(){
+			$("#idskill-form").submit(function(e){
+				console.log(e)
+				
+			})
+		})
+
+
+
 
 	</script>
 
@@ -214,8 +223,7 @@
 
 		        <li class="notify-image sample-information">
 		          <img src="images/sample.jpg" alt="profile-pic">
-		        </li>
-		        
+		        </li>        
 
 		 </ul>
 		
@@ -224,7 +232,7 @@
 
 <div class="Personal-info">
 	<div class="dropdown">
-	<div class="card" style="width:42rem;">	
+	<div class="card">	
 		<div class="headingpart">
 			<h2>Personal Detail</h2>
 		</div>
@@ -232,40 +240,41 @@
 		<form class="needs-validation" novalidate  method="Post" action="person-detail">
 			<label>Name*:-</label>
 			 <div class="form-row name-info">
-			    <div class="col-md-2 ">
-			      <input type="text" id="validationCustom01" placeholder="Mr" style="width:70px;" required>
+			    <div class="col-md-2 col-2">
+			       <div class="form-group">
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>Mr.</option>
+				      	<option>Ms.</option>
+				      	<option>Mrs.</option>
+				   	 </select>
+				  	</div>
 			    </div>
 			   
-			   	<div class="col-md-3">
+			   	<div class="col-md-3 col-5">
 			      <input type="text" id="validationCustom01" placeholder="First name"  required>
 			    </div>
-			    <div class="col-md-3">
-			      <input type="text" id="validationCustom01" placeholder="Last name" style="margin-left:70px;" required>
+			    <div class="col-md-3 col-5">
+			      <input type="text" id="validationCustom01" placeholder="Last name" required>
 			    </div>
 			</div>
 			<label>Mobile Number*:-</label>
 			<div class="form-row">
-			    <div class="col-md-1">
-			      <input type="text" id="validationCustom01" style="width:100px;" placeholder="First name" value="+91" required>
-			    </div>
-			    <div class="col-md-1 ">
-			    </div>
-			   	<div class="col-md-7 ">
-			      <input type="text" id="validationCustom01" placeholder="9000123456" required>
+			   	<div class="col-md-3 col-12">
+			      <input type="text" id="validationCustom01" placeholder="91+ 9000123456" required>
 			    </div>
 			</div>
 			<label>Current City*:-</label>
 			<div class="form-row">
-			    <div class="col-md-12 ">
-			      <input type="text" id="validationCustom01" placeholder="@ Start typing" style="width:400px;" required>
+			    <div class="col-md-12 col-12">
+			      <input type="text" id="validationCustom01" placeholder="@ Start typing" required>
 			    </div>
 			</div>
 
 			<label>Add 2nd City:-</label>
 			<div class="form-row">
-			    <div class="col-md-12">
+			    <div class="col-md-12 col-12">
 			    	<p style="margin-left:50px; font-size:13px;">If you study in one city (say Delhi) but are from a different city (say Chennai), fill this to be considered for opportunities in both</p>
-			      <input type="text" id="validationCustom01" placeholder="@ Start typing" style="width:400px;" required>
+			      <input type="text" id="validationCustom01" placeholder="@ Start typing" required>
 			    </div>
 			</div>
 			<div class="but">
@@ -279,7 +288,7 @@
 
 <div class="education">
 	<div class="dropdown">
-	<div class="card" style="width:40rem;">
+	<div class="card">
 		<div class="headingpart">
 			<h2>Education</h2>
 		</div>
@@ -311,7 +320,7 @@
 
 <div class="experiance">
 	<div class="dropdown">
-	<div class="card" style="width:40rem;">
+	<div class="card">
 		<div class="headingpart">
 			<h2>Experiance</h2>
 		</div>
@@ -336,7 +345,7 @@
 
 <div class="skill">
 	<div class="dropdown">
-		<div class="card" style="width:45rem;">
+		<div class="card">
 			<div class="headingpart">
 				<h2>Skill</h2>	
 			</div>
@@ -348,19 +357,21 @@
 			<div class="mainform">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3"><p>web Design</p></div>
-						<div class="col-md-3"><p>web Development</p></div>
-						<div class="col-md-3"><p>Data Anaysis</p></div>
-						<div class="col-md-3"><p>Graphics</p></div>
-						<div class="col-md-3"><p>Data Science</p></div>
-						<div class="col-md-3"><p>Python</p></div>
+						<div class="col-md-3 col-6"><p>web Design</p></div>
+						<div class="col-md-3 col-6"><p>java</p></div>
+						<div class="col-md-3 col-6"><p>Data Anaysis</p></div>
+						<div class="col-md-3 col-6"><p>Graphics</p></div>
+						<div class="col-md-3 col-6"><p>Data Science</p></div>
+						<div class="col-md-3 col-6"><p>Python</p></div>
 					</div>
 				</div>	
 			</div>
-
-			<div class="input-section">
-				<input type="text" name="skill-inp"  placeholder="add more skill here eg-react">
-			</div>
+			<form id="skill-form">
+				<div class="input-section">
+					<input type="text" name="skill-inp" id="skill-input" placeholder="add more skill here eg-react">
+					<button type="submit" class="buttom">+</button>
+				</div>
+		    </form>
 		</div>
 
 	</div>
@@ -370,7 +381,7 @@
 
 <div class="sample-info">
 	<div class="dropdown">
-		<div class="card" style="width:40rem;">
+		<div class="card">
 			<div class="headingpart">
 				<h2>Work Sample</h2>	
 			</div>
@@ -403,7 +414,7 @@
 
 <div class="graduation">
 	<div class="dropdown">
-	<div class="card" style="width:40rem;">	
+	<div class="card" >	
 		<div class="headingpart">
 			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
 			<h2>Graduation Details</h2>
@@ -413,7 +424,7 @@
 
 			<label class="mainlabel">Graduation Status:-</label>
 			 <div class="form-row name-info mb-3">
-			    <div class="col-md-3 ">
+			    <div class="col-md-3">
 			        <div class="form-check">
 					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
 					  <label class="form-check-label" for="exampleRadios1">
@@ -421,8 +432,8 @@
 					  </label>
 					</div>
 			    </div>
-			   	<div class="col-md-3 ">
-			      <div class="form-check" style="margin-left:200px;">
+			   	<div class="col-md-3  ">
+			      <div class="form-check">
 					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
 					  <label class="form-check-label" for="exampleRadios1">
 					    Completed
@@ -433,39 +444,65 @@
 
 			<label class="mainlabel">College*:-</label>
 			<div class="form-row">
-			   	<div class="col-md-7 mb-3">
-			      <input type="text" id="validationCustom01" placeholder="Ex:-IIT Delhi" style="width:90%" required>
+			   	<div class="col-md-10 col-12 mb-3">
+			      <input type="text" id="validationCustom01" placeholder="Ex:-IIT Delhi" required>
+			    </div>
+			</div>
+			<div class="form-row name-info mb-1">
+			    <div class="col-md-4 col-5 ">
+			    	<div class="form-group">
+				    	<label for="exampleFormControlSelect1">Start year:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>choose year</option>
+				      	<option>2021</option>
+				      	<option>2020</option>
+				      	<option>2019</option>
+				      	<option>2018</option>
+				      	<option>2017</option>
+				   	 </select>
+				  	</div>
+			    </div>
+			   	<div class="col-md-4 col-5" style="margin-left:10%;">
+			    	<div class="form-group">
+				    	<label for="exampleFormControlSelect1">End year:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>choose year</option>
+				      	<option>2021</option>
+				      	<option>2020</option>
+				      	<option>2019</option>
+				      	<option>2018</option>
+				      	<option>2017</option>
+				   	 </select>
+				  	</div>
 			    </div>
 			</div>
 			<div class="form-row name-info mb-3">
-			    <div class="col-md-4 ">
-			    	<label class="mainlabel">Start Year*:-</label>
-			      <input type="text" id="validationCustom01" placeholder="2020" required>
-			    </div>
-			   	<div class="col-md-4" style="margin-left: 70px;">
-			    	<label class="mainlabel">End Year*:-</label>
-			      <input type="text" id="validationCustom01" placeholder="2024" required>
-			    </div>
-			</div>
-
-			<div class="form-row name-info mb-3">
-			    <div class="col-md-4 ">
+			    <div class="col-md-4 col-12">
 			    	<label class="mainlabel">Degree*:-</label>
 			      <input type="text" id="validationCustom01" placeholder="Ex-Btech" required>
 			    </div>
-			   	<div class="col-md-4" style="margin-left: 70px;">
-			    	<label class="mainlabel">Stream:-</label>
-			      <input type="text" id="validationCustom01" placeholder="Ex-Information Technology" required>
+			   	<div class="col-md-4 col-12 rextra">
+			    	<label class="mainlabel ">Stream:-</label>
+			      <input type="text" id="validationCustom01" class="rextra" placeholder="Ex-IT" required>
 			    </div>
 			</div>
-			<div class="form-row name-info mb-3">
-			    <div class="col-md-4 ">
-			    	<label class="mainlabel">Performance Scale:-</label>
-			      <input type="text" id="validationCustom01" placeholder="Cgpa" required>
+			<div class="form-row name-info mb-1">
+			    <div class="col-md-4 col-4">
+			    	<div class="form-group">
+				    	<label for="exampleFormControlSelect1">CGPA scale:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>percentage</option>
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>s
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>
+				   	 </select>
+				  	</div>
 			    </div>
-			   	<div class="col-md-4" style="margin-left: 70px;">
-			    	<label class="mainlabel">Performance:-</label>
-			      <input type="text" id="validationCustom01" placeholder="your score" required>
+			   	<div class="col-md-4 col-4" style="margin-left:10%;">
+			    	<label class="mainlabel" style="margin-top: 8px;">Score:-</label>
+			      <input type="text" id="validationCustom01" placeholder="0.00" style="margin-top: 8px;" required>
 			    </div>
 			</div>
 			
@@ -481,10 +518,10 @@
 
 <div class="Senior-secondary">
 	<div class="dropdown">
-	<div class="card" style="width:40rem;">	
+	<div class="card">	
 		<div class="headingpart">
-			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
-			<h2>XII (Senior-secondary)</h2>
+			<div class="close">x</div>
+			<h3>XII (Senior-secondary)</h3>
 		</div>
 		
 		<form class="needs-validation" novalidate  method="Post" action="person-detail">
@@ -500,7 +537,7 @@
 					</div>
 			    </div>
 			   	<div class="col-md-3 ">
-			      <div class="form-check" style="margin-left:200px;">
+			      <div class="form-check">
 					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
 					  <label class="form-check-label" for="exampleRadios1">
 					    Completed
@@ -511,36 +548,66 @@
 
 			<label class="mainlabel">School*:-</label>
 			<div class="form-row">
-			   	<div class="col-md-7 ">
+			   	<div class="col-md-10 ">
 			      <input type="text" id="validationCustom01" placeholder="Ex:-Dav Public School" style="width:90%" required>
 			    </div>
 			</div>
 			<label class="mainlabel">Board:-</label>
 			<div class="form-row">
-			   	<div class="col-md-7 ">
+			   	<div class="col-md-10 col-12">
 			      <input type="text" id="validationCustom01" placeholder="Ex:-CBSE" style="width:90%" required>
 			    </div>
 			</div>
-			<label class="mainlabel">Year of Completion*:-</label>
 			<div class="form-row">
-			   	<div class="col-md-7 ">
-			      <input type="text" id="validationCustom01" placeholder="choose year" style="width:90%" required>
+			   	<div class="col-md-7 col-10">
+			      <div class="form-group">
+				    	<label for="exampleFormControlSelect1">Year of Completion*:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>Choose year</option>
+				      	<option>2020</option>
+				      	<option>2019</option>
+				      	<option>2018</option>s
+				      	<option>2017</option>
+				      	<option>2016</option>
+				      	<option>2015</option>
+				      	<option>2014</option>
+				      	<option>2013</option>s
+				      	<option>2012</option>
+				      	<option>2011</option>
+				   	 </select>
+				  	</div>
 			    </div>
 			</div>
-			<div class="form-row name-info">
-			    <div class="col-md-4 ">
-			    	<label class="mainlabel">Performance Scale:-</label>
-			      <input type="text" id="validationCustom01" placeholder="percentage" required>
+			<div class="form-row name-info mb-1">
+			    <div class="col-md-4 col-4">
+			    	<div class="form-group">
+				    	<label for="exampleFormControlSelect1">CGPA scale:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>percentage</option>
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>s
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>
+				   	 </select>
+				  	</div>
 			    </div>
-			   	<div class="col-md-4" style="margin-left: 70px;">
-			    	<label class="mainlabel">Performance:-</label>
-			      <input type="text" id="validationCustom01" placeholder="your score" required>
+			   	<div class="col-md-4 col-4" style="margin-left:10%;">
+			    	<label class="mainlabel" style="margin-top: 8px;">score:-</label>
+			      <input type="text" id="validationCustom01" placeholder="0.00" style="margin-top: 8px;" required>
 			    </div>
 			</div>
-			<label class="mainlabel">Stream*:-</label>
 			<div class="form-row">
-			   	<div class="col-md-7">
-			      <input type="text" id="validationCustom01" placeholder="choose stream" style="width:90%" required>
+			   	<div class="col-md-7 col-10">
+			     <div class="form-group">
+				    	<label for="exampleFormControlSelect1">Stream</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>Choose stream</option>
+				      	<option>Science</option>
+				      	<option>Commerce</option>
+				      	<option>Arts</option>
+				   	 </select>
+				  	</div>
 			    </div>
 			</div>
 			
@@ -556,9 +623,9 @@
 
 <div class="secondary">
 	<div class="dropdown">
-	<div class="card" style="width:40rem;">	
+	<div class="card">	
 		<div class="headingpart">
-			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
+			<div class="close">x</div>
 			<h2> X (Secondary) Detail</h2>
 		</div>
 		
@@ -575,7 +642,7 @@
 					</div>
 			    </div>
 			   	<div class="col-md-3 ">
-			      <div class="form-check" style="margin-left:200px;">
+			      <div class="form-check">
 					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
 					  <label class="form-check-label" for="exampleRadios1">
 					    Completed
@@ -586,40 +653,55 @@
 
 			<label class="mainlabel">School*:-</label>
 			<div class="form-row">
-			   	<div class="col-md-7 ">
+			   	<div class="col-md-10 col-12">
 			      <input type="text" id="validationCustom01" placeholder="Ex:-Dav Public School" style="width:90%" required>
 			    </div>
 			</div>
 			<label class="mainlabel">Board:-</label>
 			<div class="form-row">
-			   	<div class="col-md-7 ">
+			   	<div class="col-md-10 col-12 ">
 			      <input type="text" id="validationCustom01" placeholder="Ex:-CBSE" style="width:90%" required>
 			    </div>
 			</div>
-			<label class="mainlabel">Year of Completion*:-</label>
 			<div class="form-row">
-			   	<div class="col-md-7 ">
-			      <input type="text" id="validationCustom01" placeholder="choose year" style="width:90%" required>
+			   	<div class="col-md-7 col-10">
+			      <div class="form-group">
+				    	<label for="exampleFormControlSelect1">Year of Completion*:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>Choose year</option>
+				      	<option>2020</option>
+				      	<option>2019</option>
+				      	<option>2018</option>s
+				      	<option>2017</option>
+				      	<option>2016</option>
+				      	<option>2015</option>
+				      	<option>2014</option>
+				      	<option>2013</option>s
+				      	<option>2012</option>
+				      	<option>2011</option>
+				   	 </select>
+				  	</div>
 			    </div>
 			</div>
-			<div class="form-row name-info">
-			    <div class="col-md-4 ">
-			    	<label class="mainlabel">Performance Scale:-</label>
-			      <input type="text" id="validationCustom01" placeholder="Cgpa" required>
+			<div class="form-row name-info mb-1">
+			    <div class="col-md-4 col-4">
+			    	<div class="form-group">
+				    	<label for="exampleFormControlSelect1">CGPA scale:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>percentage</option>
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>s
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>
+				   	 </select>
+				  	</div>
 			    </div>
-			   	<div class="col-md-4" style="margin-left: 70px;">
-			    	<label class="mainlabel">Performance:-</label>
-			      <input type="text" id="validationCustom01" placeholder="your score" required>
+			   	<div class="col-md-4 col-4" style="margin-left:10%;">
+			    	<label class="mainlabel" style="margin-top: 8px;">score:-</label>
+			      <input type="text" id="validationCustom01" placeholder="0.00" style="margin-top: 8px;" required>
 			    </div>
 			</div>
-			<label class="mainlabel">Stream*:-</label>
-			<div class="form-row">
-			   	<div class="col-md-7">
-			      <input type="text" id="validationCustom01" placeholder="choose stream" style="width:90%" required>
-			    </div>
-			</div>
-			
-			
 			<div class="but">
 				<button type="submit" class="button">Next</button>
 			</div>
@@ -631,10 +713,10 @@
 
 <div class="post-grad">
 	<div class="dropdown">
-	<div class="card" style="width:40rem;">	
+	<div class="card">	
 		<div class="headingpart">
-			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
-			<h2>Post Graduation Details</h2>
+			<div class="close">x</div>
+			<h3>Post Graduation Details</h3>
 		</div>
 		
 		<form class="needs-validation" novalidate  method="Post" action="person-detail">
@@ -650,7 +732,7 @@
 					</div>
 			    </div>
 			   	<div class="col-md-3 ">
-			      <div class="form-check" style="margin-left:200px;">
+			      <div class="form-check">
 					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
 					  <label class="form-check-label" for="exampleRadios1">
 					    Completed
@@ -661,39 +743,66 @@
 
 			<label class="mainlabel">College*:-</label>
 			<div class="form-row">
-			   	<div class="col-md-7 mb-3">
+			   	<div class="col-md-10 col-12 mb-3">
 			      <input type="text" id="validationCustom01" placeholder="Ex:-Delhi Institute of Management" style="width:90%" required>
 			    </div>
 			</div>
-			<div class="form-row name-info mb-3">
-			    <div class="col-md-4 ">
-			    	<label class="mainlabel">Start Year*:-</label>
-			      <input type="text" id="validationCustom01" placeholder="2020" required>
+			<div class="form-row name-info mb-1">
+			    <div class="col-md-4 col-5 ">
+			    	<div class="form-group">
+				    	<label for="exampleFormControlSelect1">Start year:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>choose year</option>
+				      	<option>2021</option>
+				      	<option>2020</option>
+				      	<option>2019</option>
+				      	<option>2018</option>
+				      	<option>2017</option>
+				   	 </select>
+				  	</div>
 			    </div>
-			   	<div class="col-md-4" style="margin-left: 70px;">
-			    	<label class="mainlabel">End Year*:-</label>
-			      <input type="text" id="validationCustom01" placeholder="2024" required>
+			   	<div class="col-md-4 col-5" style="margin-left:10%;">
+			    	<div class="form-group">
+				    	<label for="exampleFormControlSelect1">End year:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>choose year</option>
+				      	<option>2021</option>
+				      	<option>2020</option>
+				      	<option>2019</option>
+				      	<option>2018</option>
+				      	<option>2017</option>
+				   	 </select>
+				  	</div>
 			    </div>
 			</div>
 
-			<div class="form-row name-info mb-3">
-			    <div class="col-md-4 ">
+			<div class="form-row name-info mb-3" >
+			    <div class="col-md-4 col-6">
 			    	<label class="mainlabel">Degree*:-</label>
 			      <input type="text" id="validationCustom01" placeholder="Ex-Btech" required>
 			    </div>
-			   	<div class="col-md-4" style="margin-left: 70px;">
-			    	<label class="mainlabel">Stream:-</label>
-			      <input type="text" id="validationCustom01" placeholder="Ex-Information Technology" required>
+			   	<div class="col-md-4 col-6 rextra">
+			    	<label class="mainlabel ">Stream:-</label>
+			      <input type="text" id="validationCustom01" placeholder="Ex-IT" required>
 			    </div>
 			</div>
-			<div class="form-row name-info mb-3">
-			    <div class="col-md-4 ">
-			    	<label class="mainlabel">Performance Scale:-</label>
-			      <input type="text" id="validationCustom01" placeholder="Cgpa" required>
+			<div class="form-row name-info mb-1">
+			    <div class="col-md-4 col-4">
+			    	<div class="form-group">
+				    	<label for="exampleFormControlSelect1">CGPA scale:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>percentage</option>
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>s
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>
+				   	 </select>
+				  	</div>
 			    </div>
-			   	<div class="col-md-4" style="margin-left: 70px;">
-			    	<label class="mainlabel">Performance:-</label>
-			      <input type="text" id="validationCustom01" placeholder="your score" required>
+			   	<div class="col-md-4 col-4" style="margin-left:10%;">
+			    	<label class="mainlabel" style="margin-top: 8px;">score:-</label>
+			      <input type="text" id="validationCustom01" placeholder="0.00" style="margin-top: 8px;" required>
 			    </div>
 			</div>
 			
@@ -708,9 +817,9 @@
 
 <div class="diploma">
 	<div class="dropdown">
-	<div class="card" style="width:40rem;">	
+	<div class="card">	
 		<div class="headingpart">
-			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
+			<div class="close">x</div>
 			<h2>Diploma details</h2>
 		</div>
 		
@@ -727,7 +836,7 @@
 					</div>
 			    </div>
 			   	<div class="col-md-3 ">
-			      <div class="form-check" style="margin-left:200px;">
+			      <div class="form-check">
 					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
 					  <label class="form-check-label" for="exampleRadios1">
 					    Completed
@@ -738,35 +847,63 @@
 
 			<label class="mainlabel">College*:-</label>
 			<div class="form-row">
-			   	<div class="col-md-7 mb-3">
+			   	<div class="col-md-10 col-12 mb-3">
 			      <input type="text" id="validationCustom01" placeholder="Ex:-IGNOU" style="width:90%" required>
 			    </div>
 			</div>
-			<div class="form-row name-info mb-3">
-			    <div class="col-md-4 ">
-			    	<label class="mainlabel">Start Year*:-</label>
-			      <input type="text" id="validationCustom01" placeholder="2020" required>
+			<div class="form-row name-info mb-1">
+			    <div class="col-md-4 col-5 ">
+			    	<div class="form-group">
+				    	<label for="exampleFormControlSelect1">Start year:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>choose year</option>
+				      	<option>2021</option>
+				      	<option>2020</option>
+				      	<option>2019</option>
+				      	<option>2018</option>
+				      	<option>2017</option>
+				   	 </select>
+				  	</div>
 			    </div>
-			   	<div class="col-md-4" style="margin-left: 70px;">
-			    	<label class="mainlabel">End Year*:-</label>
-			      <input type="text" id="validationCustom01" placeholder="2024" required>
+			   	<div class="col-md-4 col-5" style="margin-left:10%;">
+			    	<div class="form-group">
+				    	<label for="exampleFormControlSelect1">End year:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>choose year</option>
+				      	<option>2021</option>
+				      	<option>2020</option>
+				      	<option>2019</option>
+				      	<option>2018</option>
+				      	<option>2017</option>
+				   	 </select>
+				  	</div>
 			    </div>
 			</div>
 
+
 			<div class="form-row name-info mb-3">
-			   	<div class="col-md-8">
+			   	<div class="col-md-10 col-12">
 			    	<label class="mainlabel">Stream:-</label>
-			      <input type="text" id="validationCustom01" placeholder="Ex-Creative writing" style="width:80%" required>
+			      <input type="text" id="validationCustom01" placeholder="Ex-Creative writing" required>
 			    </div>
 			</div>
-			<div class="form-row name-info mb-3">
-			    <div class="col-md-4 ">
-			    	<label class="mainlabel">Performance Scale:-</label>
-			      <input type="text" id="validationCustom01" placeholder="Cgpa" required>
+			<div class="form-row name-info mb-1">
+			    <div class="col-md-4 col-4">
+			    	<div class="form-group">
+				    	<label for="exampleFormControlSelect1">CGPA scale:-</label>
+				    	<select class="form-control" id="exampleFormControlSelect1">
+				    	<option>percentage</option>
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>s
+				      	<option>CGPA(scale of 10)</option>
+				      	<option>CGPA(scale of 10)</option>
+				   	 </select>
+				  	</div>
 			    </div>
-			   	<div class="col-md-4" style="margin-left: 70px;">
-			    	<label class="mainlabel">Performance:-</label>
-			      <input type="text" id="validationCustom01" placeholder="your score" required>
+			   	<div class="col-md-4 col-4" style="margin-left:10%;">
+			    	<label class="mainlabel" style="margin-top: 8px;">score:-</label>
+			      <input type="text" id="validationCustom01" placeholder="0.00" style="margin-top: 8px;" required>
 			    </div>
 			</div>
 			
@@ -783,9 +920,9 @@
 
 <div class="internship">
 	<div class="dropdown">
-	<div class="card" style="width:40rem;">	
+	<div class="card">	
 		<div class="headingpart">
-			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
+			<div class="close">x</div>
 			<h2>Internship details</h2>
 		</div>
 		
@@ -812,13 +949,13 @@
 			    </div>
 			</div>
 			<div class="form-row name-info mb-1">
-			    <div class="col-md-4 ">
-			    	<label class="mainlabel">Start Date*:-</label>
-			      <input type="text" id="validationCustom01" placeholder="2020" required>
+			    <div class="col-md-4 col-6">
+			    	<label class="mainlabel">start Date*:-</label>
+			    	 <input type="date" id="validationCustom01" placeholder="Ex:-Kolkata,west Bengal" style="width:90%" required>
 			    </div>
-			   	<div class="col-md-4" style="margin-left: 70px;">
-			    	<label class="mainlabel">End date*:-</label>
-			      <input type="text" id="validationCustom01" placeholder="2024" required>
+			   	<div class="col-md-4 col-6">
+			   		<label class="mainlabel">Last Date*:-</label>
+			    	<input type="date" id="validationCustom01" placeholder="Ex:-Kolkata,west Bengal" style="width:90%" required>
 			    </div>
 			</div>
 			<label class="mainlabel">Description:-</label>
@@ -839,9 +976,9 @@
 
 <div class="job">
 	<div class="dropdown">
-	<div class="card" style="width:40rem;">	
+	<div class="card">	
 		<div class="headingpart">
-			<div class="close" style="float: right; color: #fff; margin-right:20px; cursor: pointer;">x</div>
+			<div class="close">x</div>
 			<h2>Job Detail</h2>
 		</div>
 		
@@ -868,13 +1005,13 @@
 			    </div>
 			</div>
 			<div class="form-row name-info mb-1">
-			    <div class="col-md-4 ">
-			    	<label class="mainlabel">Start Date*:-</label>
-			      <input type="text" id="validationCustom01" placeholder="2020" required>
+			    <div class="col-md-4 col-6">
+			    	<label class="mainlabel">start Date*:-</label>
+			    	 <input type="date" id="validationCustom01" placeholder="Ex:-Kolkata,west Bengal" style="width:90%" required>
 			    </div>
-			   	<div class="col-md-4" style="margin-left: 70px;">
-			    	<label class="mainlabel">End date*:-</label>
-			      <input type="text" id="validationCustom01" placeholder="2024" required>
+			   	<div class="col-md-4 col-6">
+			   		<label class="mainlabel">Last Date*:-</label>
+			    	<input type="date" id="validationCustom01" placeholder="Ex:-Kolkata,west Bengal" style="width:90%" required>
 			    </div>
 			</div>
 			<label class="mainlabel">Description:-</label>
@@ -914,9 +1051,19 @@
     });
   }, false);
 })();
+
+
+	const form=document.querySelector('#skill-form');
+	const skillInput=document.querySelector("#skill-input");
+	const skillList=document.querySelector(".skill .mainform .row");
+	form.addEventListener('submit',e =>{
+		e.preventDefault();
+		console.log(skillInput.value);
+		skillList.innerHTML+=`<div class="col-md-3 col-6"><p>${skillInput.value}</p></div>`
+
+	})
+
 </script>
-
-
 
 
 

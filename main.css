@@ -2,10 +2,10 @@
 
 .navigation{
 	margin-top:100px;
-	margin-left:280px;
-	display:block;
-}
+	margin-left:300px;
+	display:block;s
 
+}
 
 .navigation .notify-item{
 	display:flex;
@@ -49,6 +49,7 @@
 .Personal-info .card{
 	box-shadow: 0px 2px 2px #3D8BF4;
 	border:none;
+	width:42rem;
 }
 .Personal-info .headingpart{
 	background-color:#3D8BF4;
@@ -75,10 +76,19 @@
     display: block;
     margin-left:40px;
     margin-top:5px;
+    font-weight: bold;
 }
 .Personal-info .needs-validation .form-row input{
+	width:90%;
     padding:0px 0px;
-	margin:0px 0px 30px 45px;
+	margin:-2px 0px 28px 45px;
+	border-width:0px 0px 3px 0px;
+	outline: none;
+}
+
+.Personal-info .needs-validation .form-row .form-group select{
+    padding:0px 0px;
+	margin:-12px 0px 10px 45px;
 	border-width:0px 0px 3px 0px;
 	outline: none;
 }
@@ -108,6 +118,7 @@
 }
 .experiance .card{
 	border: none;
+	width: 40rem;
 	box-shadow: 0px 2px 2px #ffce42;
 }
 .experiance .headingpart{	
@@ -167,6 +178,7 @@
 }
 .education .card{
 	border: none;
+	width: 40rem;
 	box-shadow: 0px 2px 2px #20B2AA;
 }
 .education .headingpart{	
@@ -227,6 +239,7 @@
 }
 .skill .card{
 	border: none;
+	width: 45rem;
 	box-shadow: 0px 2px 2px #DC143C;
 }
 .skill .headingpart{
@@ -256,17 +269,40 @@
 	text-align:center;
 }
 .skill .mainform .col-md-3  p{
-	margin-top:5px;
+	margin-top:10px;
 }
 .skill .card .input-section input[type="text"]{
-    width: 77%;
-	margin:20px 25px 50px 60px;
+    width:80%;
+	margin:20px 0px 50px 60px;
 	border-width:0px 0px 3px 0px;
 	outline: none;
 }
 .skill .input-section input::placeholder {
 	padding-left:10px;
 	color:#ddd;
+}
+.skill .input-section{
+	margin-top:20px;
+}
+.skill form .buttom{
+  	display:block;
+    width:45px;
+    height:45px;
+    line-height:2px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-decoration:none;
+    background: #DC143C ;
+    box-shadow: 0 0 3px gray;
+    font-size:40px;
+    font-weight:bold;
+    outline: none;
+    margin-right:140px;
+    float: right;
+    margin-top:5px;
+    overflow: hidden;
+
 }
 .skill .dropdown:before{
 	content: " ";
@@ -290,6 +326,7 @@
 }
 .sample-info .card{
 	border: none;
+	width: 40rem;
 	box-shadow: 0px 4px 4px #FF7F50;
 }
 
@@ -378,6 +415,7 @@
 .diploma .card,.Senior-secondary .card,.post-grad .card,.Senior-secondary .card ,.secondary .card,.Senior-secondary .card,.graduation .card{
 	box-shadow: 0px 4px 4px #800080;
 	border:none;
+	width:40rem;
 }
 .diploma .headingpart,.post-grad .headingpart,.secondary .headingpart,.Senior-secondary .headingpart,.graduation .headingpart{
 	background-color:#800080;
@@ -386,6 +424,12 @@
 	padding-top:10px;
 	height:70px;	
 
+}
+.diploma .headingpart .close ,.post-grad .headingpart .close,.secondary .headingpart .close,.Senior-secondary .headingpart .close,.graduation .headingpart .close{
+	float: right; 
+	color: #fff; 
+	margin-right:20px;
+	 cursor: pointer;
 }
 .needs-validation{
 	margin-top:30px;
@@ -399,11 +443,30 @@
     margin-top:5px;
     font-weight:bold;
 }
+.post-grad .needs-validation .rextra, .graduation .needs-validation .rextra{
+    display: block;
+    margin-left:70px;
+    margin-top:5px;
+    font-weight:bold;
+}
+
+.diploma .needs-validation .form-row .form-group label,.post-grad .needs-validation .form-row .form-group label,.secondary .needs-validation .form-row .form-group label,.Senior-secondary .needs-validation .form-row .form-group label, .graduation .needs-validation .form-row .form-group label{
+    display: block;
+    margin-left:40px;
+    margin-top:5px;
+    font-weight:bold;
+}
 .diploma .needs-validation .form-row input[type="text"],.post-grad .needs-validation .form-row input[type="text"],.secondary .needs-validation .form-row input[type="text"],.Senior-secondary .needs-validation .form-row input[type="text"],.graduation .needs-validation .form-row input[type="text"]{
     padding:0px 0px;
 	margin:0px 0px 12px 40px;
 	border-width:0px 0px 3px 0px;
-	outline: none;
+	outline:none;
+}
+.diploma .needs-validation .form-row .form-group select,.post-grad .needs-validation .form-row .form-group select,.secondary .needs-validation .form-row .form-group select,.Senior-secondary .needs-validation .form-row .form-group select,.graduation .needs-validation .form-row .form-group select{
+    padding:0px 0px;
+	margin:0px 0px 12px 40px;
+	border-width:0px 0px 3px 0px;
+	outline:none;
 }
 .diploma .needs-validation .form-row input[type="text"]::placeholder,.post-grad .needs-validation .form-row input[type="text"]::placeholder,.secondary .needs-validation .form-row input[type="text"]::placeholder ,.Senior-secondary .needs-validation .form-row input[type="text"]::placeholder ,.graduation .needs-validation .form-row input[type="text"]::placeholder{
 	padding-left:14px;
@@ -424,10 +487,6 @@
 
 
 
-
-
-
-
 .internship{
 	margin-top:15px;
 	margin-left:350px;
@@ -441,6 +500,7 @@
 .job .card,.internship .card{
 	box-shadow: 0px 4px 4px #ffce42;
 	border:none;
+	width: 40rem;
 }
 .job .headingpart,.internship .headingpart{
 	background-color:#ffce42;
@@ -460,11 +520,30 @@
     font-weight:bold;
 
 }
-.job .needs-validation .form-row input[type="text"],.internship .needs-validation .form-row input[type="text"]{
+.job .headingpart .close ,.internship .headingpart .close{
+	float: right; 
+	color: #fff; 
+	margin-right:20px;
+	 cursor: pointer;
+}
+.job .needs-validation .form-row input,.internship .needs-validation .form-row input{
 	padding:0px 0px;
 	margin:0px 0px 12px 40px;
 	border-width:0px 0px 3px 0px;
 	outline: none;
+}
+.job .needs-validation .form-row .form-group select,.internship .needs-validation .form-row .form-group select{
+	padding:0px 0px;
+	margin:0px 0px 12px 40px;
+	border-width:0px 0px 3px 0px;
+	outline: none;
+}
+.job .needs-validation .form-row .form-group label,.internship .needs-validation .form-row .form-group label{
+	display: block;
+    margin-left:40px;
+    margin-top:5px;
+    font-weight:bold;
+
 }
 .job .needs-validation .form-row input[type="text"]::placeholder,.internship .needs-validation .form-row input[type="text"]::placeholder{
 	padding-left:14px;
@@ -501,6 +580,281 @@
 
 
 
+
+@media (max-width:450px){
+	.navigation{
+		margin-top:50px;
+		margin-left:-35px;
+	}
+	.navigation .notify-item .notify-image{
+		padding: 0 16px;
+	}	
+	.navigation .notify-item .notify-image img{
+		width:40px;
+		border-radius:50%;
+	}
+	.navigation hr{
+		border-width:2px;
+		margin-bottom: 0;
+		margin-bottom:-20px;
+		width:70%;
+		margin-left:60px;
+	}
+	.Personal-info {
+	margin-top:15px;
+	margin-left:10px;
+	}
+	.Personal-info .card{
+		width:22rem;
+	}
+	.Personal-info .headingpart{
+		padding-top:10px;
+		height:70px;	
+	}
+	.Personal-info .needs-validation  label{
+		margin-left:10px;
+		margin-top:5px;  
+	}
+	.Personal-info .needs-validation .form-row input{
+		margin:0px 0px 20px 10px;	
+	}
+	.Personal-info .needs-validation .form-row .form-group select{
+		margin:-12px 0px 10px 10px;
+	}
+
+	.experiance{
+	margin-top:16px;
+	margin-left:15px;
+	}
+	.experiance .card{
+		width: 22rem;	
+	}		
+	.experiance .card .mainform{
+		margin-top:10px;
+		margin-bottom:50px;
+		margin-left:10px;
+	}
+	.experiance .dropdown:before{	
+		left:42%;
+	}
+	.education{
+	margin-left:15px;
+	}
+	.education .card{
+		width:22rem;	
+	}	
+	.education .card .mainform{
+		margin-top:10px;
+		margin-bottom:50px;
+		margin-left:20px;
+	}
+	.education .dropdown:before{
+		left:22%;	
+	}
+
+	.skill{
+	margin-top:16px;
+	margin-left:8px;
+	}
+	.skill .card{	
+		width: 22rem;
+	}
+	.skill .mainform {
+		margin-left:5px;
+		padding:5px 5px;	
+	}
+	.skill .mainform .col-md-3{
+		border:solid 1px #45b3e0;
+		margin: 2px 0px;
+		width:5px;
+		height:50px;
+	}
+	.skill .mainform .col-md-3  p{
+		margin-top:5px;
+	}
+	.skill .card .input-section input[type="text"]{
+	    width:65%;
+		margin:10px 0px 50px 20px;
+		border-width:0px 0px 3px 0px;
+		outline: none;
+	}
+	.skill .input-section{
+		margin-top:20px;
+	}
+	.skill .dropdown:before{
+		left:62%;
+	}
+	.skill form .buttom{
+	    margin-right:50px;
+	    margin-top:-5px;
+	   
+
+	}
+
+	.sample-info{
+	margin-left:15px;
+	}
+	.sample-info .card{
+		width: 22rem;
+	}
+	.sample-info .input-section input[type="text"]{  
+		margin:0px 0px 30px 20px;
+	}
+	.sample-info .input-section label{
+		margin:0px 0px 10px 20px;
+	}
+	.sample-info .dropdown:before{
+		left:82%;
+	}
+
+
+
+
+	.graduation {
+	margin-top:15px;
+	margin-left:15px;
+	
+	}
+	.Senior-secondary{
+		margin-top:15px;
+		margin-left:15px;
+	}
+	.secondary{
+		margin-top:15px;
+		margin-left:15px;
+	}
+	.post-grad{
+		margin-top:15px;
+		margin-left:15px;
+	
+
+	}
+	.diploma{
+		margin-top:15px;
+		margin-left:15px;
+	}
+	.diploma .card,.Senior-secondary .card,.post-grad .card,.Senior-secondary .card ,.secondary .card,.Senior-secondary .card,.graduation .card{
+		width: 22rem;
+		padding:0 4px;
+	}
+	.diploma .needs-validation .form-check,.post-grad .needs-validation .form-check,.secondary .needs-validation .form-check,.Senior-secondary .needs-validation .form-check, .graduation .needs-validation .form-check{
+		margin-left:5px;
+	}
+	.diploma .needs-validation  label.mainlabel,.post-grad .needs-validation  label.mainlabel,.secondary .needs-validation  label.mainlabel,.Senior-secondary .needs-validation  label.mainlabel, .graduation .needs-validation  label.mainlabel{
+	    margin-left:4px;
+	    margin-top:5px;  
+	}
+	.diploma .needs-validation .form-row .form-group label,.post-grad .needs-validation .form-row .form-group label,.secondary .needs-validation .form-row .form-group label,.Senior-secondary .needs-validation .form-row .form-group label, .graduation .needs-validation .form-row .form-group label{ 
+	    margin-left:4px;
+	    margin-top:5px;   
+	}
+	.diploma .needs-validation .form-row input[type="text"],.post-grad .needs-validation .form-row input[type="text"],.secondary .needs-validation .form-row input[type="text"],.Senior-secondary .needs-validation .form-row input[type="text"],.graduation .needs-validation .form-row input[type="text"]{
+	    padding:0px 0px;
+	    width:90%;
+		margin:0px 0px 12px 4px;
+		border-width:0px 0px 3px 0px;
+		outline:none;
+	}
+	.diploma .needs-validation .form-row .form-group select,.post-grad .needs-validation .form-row .form-group select,.secondary .needs-validation .form-row .form-group select,.Senior-secondary .needs-validation .form-row .form-group select,.graduation .needs-validation .form-row .form-group select{
+	    padding:0px 0px;
+		margin:0px 0px 4px 4px;
+		border-width:0px 0px 3px 0px;
+		outline:none;
+	}
+	.post-grad .needs-validation .rextra, .graduation .needs-validation .rextra{
+	    display: block;
+	    margin-left:5px;
+	    margin-top:0px;
+	    font-weight:bold;
+	}
+
+
+	.internship{
+	margin-top:15px;
+	margin-left:15px;
+	display:none;
+	}
+	.job{
+		margin-top:15px;
+		margin-left:15px;
+		display:none;
+	}
+	.job .card,.internship .card{
+		box-shadow: 0px 4px 4px #ffce42;
+		border:none;
+		width: 22rem;
+		padding:0px 5px;
+	}
+	.job .needs-validation .form-check,.internship .needs-validation .form-check{
+		margin-left: 5px;
+	}
+	.job .needs-validation  label.mainlabel,.internship .needs-validation  label.mainlabel{
+		display: block;
+	    margin-left:4px;
+	    margin-top:5px;
+	    font-weight:bold;
+
+	}
+	.job .needs-validation .form-row input,.internship .needs-validation .form-row input{
+		padding:0px 0px;
+		margin:0px 0px 12px 4px;
+		border-width:0px 0px 3px 0px;
+		outline: none;
+	}
+	.job .needs-validation .form-row .form-group select,.internship .needs-validation .form-row .form-group select{
+		padding:0px 0px;
+		margin:0px 0px 12px 4px;
+		border-width:0px 0px 3px 0px;
+		outline: none;
+	}
+	.job .needs-validation .form-row .form-group label,.internship .needs-validation .form-row .form-group label{
+		display: block;
+	    margin-left:4px;
+	    margin-top:5px;
+	    font-weight:bold;
+
+	}
+	.diploma .needs-validation .form-row input[type="text"],.post-grad .needs-validation .form-row input[type="text"],.secondary .needs-validation .form-row input[type="text"],.Senior-secondary .needs-validation .form-row input[type="text"],.graduation .needs-validation .form-row input[type="text"]{
+		padding:0px 0px;
+		width:90%;
+		margin:0px 0px 12px 4px;
+		border-width:0px 0px 3px 0px;
+		outline:none;
+		}
+	.job .needs-validation .form-row input[type="text"]::placeholder,.internship .needs-validation .form-row input[type="text"]::placeholder{
+		padding-left:14px;
+		font-size:13px;
+	}
+
+	.job .needs-validation .form-row textarea,.internship .needs-validation .form-row textarea{
+		padding:0px 0px;
+		margin:0px 0px 12px 4px;
+		width:80%;
+		
+	}
+	.job .needs-validation .form-row textarea::placeholder,.internship .needs-validation .form-row textarea::placeholder{
+		padding-left:14px;
+		font-size:13px;
+		padding-top: 5px;
+	}
+	.job .button,.internship .button{
+	  background-color: #ffce42; /* Green */
+	  border: none;
+	  color: white;
+	  padding:15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display:inline-block;
+	  font-size:10px;
+	  float: right;
+	  margin:5px 20px 15px 15px;
+		
+	}
+
+		
+
+
+}
 
 
 
