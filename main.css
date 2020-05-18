@@ -1,48 +1,100 @@
 /*@@@@@@@@@@@@@@@@@@@@@@@@@   NAVIGATION  CSS STYLE @@@@@@@@@@@@@@@@@@  */
 
-.navigation{
-	margin-top:100px;
+.mainhead-nav .card{
+	width:45rem;
 	margin-left:300px;
-	display:block;s
+	margin-top: 70px;
+	display: block;
+	box-shadow: -5px 5px 5px #20B2AA;
+	border: none;
+	  
+}
+.mainhead-nav .display-sample-info{
+	float:right;
+	 margin-right:20px;
+	 cursor: pointer;
+}
+.mainhead-nav .card .headingpart{
+	text-align: center;
+	height:70px;
+	padding-top:10px;
+	color: #fff;
+	background-color:#20B2AA;
+}
+
+
+
+
+.navigation{
+	margin-top:30px;
+	margin-left:0px;
+	display:block;
 
 }
 
 .navigation .notify-item{
-	display:flex;
 	align-items: center;
 	margin:0 auto;
 	list-style: none;
-
 }
 .navigation .notify-item .notify-image{
-	padding: 0 50px;
+	padding: 10px 0px;
+}
+.mainhead-nav .card .navigation .notify-item .notify-image .edit-info{
+	float:right; 
+	margin-right:10px;
+}
+.mainhead-nav .card .navigation .notify-item .notify-image .done-sign{
+	float:right; 
+	margin-right:50px;
+}
+.mainhead-nav .card .navigation .notify-item .notify-image .fa-pencil{
+	font-size:30px;
+}
+.mainhead-nav .card .navigation .notify-item .notify-image .edit-feild{
+	margin-left:16px;
+	 font-size:24px;
 }
 .navigation .notify-item .notify-image img{
 	width:43px;
 	border-radius: 50%;
 }
-
-.navigation hr{
+.mainhead-nav hr{
 	border-style: none;
-	border-top: solid;
-	border-color:#ddd;
-	border-width:2px;
+	border-top:dashed;
+	border-color:#20B2AA;
+	border-width:3px;
 	margin-bottom: 0;
-	margin-bottom:-30px;
-	width:50%;
+	width:100%;
 	margin-left: 100px;
 }
 
-
+.display-sample{
+	margin-top:10px;
+	margin-left:500px;
+	display:none;
+}
+.display-sample .close{
+	cursor: pointer;
+	margin-right:8px;
+	margin-top: 5px;
+	
+}
+.display-sample .headingpart{
+	background-color:#3D8BF4;
+	text-align: center;
+	height: 50px;
+	color: #fff;
+}
 
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@  Personal-info  CSS STYLE @@@@@@@@@@@@@@@@@@  */
 
 
 .Personal-info {
-	margin-top:15px;
-	margin-left:350px;
-	display:block;
+	margin-top:10px;
+	margin-left:320px;
+	display:none;
 
 	
 }
@@ -111,9 +163,9 @@
 
 
 .experiance{
-	margin-top:16px;
-	margin-left:350px;
-	display: none;
+	margin-top:10px;
+	margin-left:320px;
+	display:none;
 
 }
 .experiance .card{
@@ -171,9 +223,9 @@
 
 
 .education{
-	margin-top:16px;
-	margin-left:350px;
-	display: none;
+	margin-top:10px;
+	margin-left:320px;
+	display:none;
 
 }
 .education .card{
@@ -231,9 +283,9 @@
 
 
 .skill{
-	margin-top:16px;
-	margin-left:350px;
-	display: none;
+	margin-top:10px;
+	margin-left:320px;
+	display:none;
 
 
 }
@@ -318,9 +370,9 @@
 
 
 .sample-info{
-	margin-top:16px;
-	margin-left:350px;
-	display: none;
+	margin-top:10px;
+	margin-left:320px;
+	display:none;
 
 
 }
@@ -429,7 +481,7 @@
 	float: right; 
 	color: #fff; 
 	margin-right:20px;
-	 cursor: pointer;
+	cursor: pointer;
 }
 .needs-validation{
 	margin-top:30px;
@@ -582,12 +634,40 @@
 
 
 @media (max-width:450px){
+	.mainhead-nav .card{
+		width:22rem;
+		margin-left:8px;
+		margin-top: 70px;
+		display: block;
+		padding: 0px 3px;
+		box-shadow: -3px 5px 5px #20B2AA;
+		border: none;
+		  
+	}
+	.display-sample{
+		margin-top:10px;
+		margin-left:10px;
+		display:none;
+	}
+	.display-sample .carousel .card{
+		margin-left: 10px;
+	}
+	.display-sample .headingpart{
+		margin-left: 10px;
+	}
+	.mainhead-nav .card .navigation .notify-item .notify-image .edit-feild{
+	margin-left:6px;
+	 font-size:16px;
+	}
+	.mainhead-nav .card .navigation .notify-item .notify-image .fa-pencil{
+	font-size:22px;
+}
 	.navigation{
 		margin-top:50px;
 		margin-left:-35px;
 	}
 	.navigation .notify-item .notify-image{
-		padding: 0 16px;
+		padding: 15px 0px;
 	}	
 	.navigation .notify-item .notify-image img{
 		width:40px;
