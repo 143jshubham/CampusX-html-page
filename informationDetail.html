@@ -39,6 +39,7 @@
 				$(".sample-info").css("display", "none");
 				$(".education").css("display", "none");
 				$(".navigation").css("display", "none");
+				$(".extracurricul").css("display", "none");
 				$(".experiance").css("display", "block");
 			})
 		})
@@ -50,6 +51,7 @@
 				$(".sample-info").css("display", "none");
 				$(".education").css("display", "none");
 				$(".navigation").css("display", "none");
+				$(".extracurricul").css("display", "none");
 				$(".skill").css("display", "block");
 			})
 		})
@@ -61,9 +63,22 @@
 				$(".skill").css("display", "none");
 				$(".education").css("display", "none");
 				$(".navigation").css("display", "none");
+				$(".extracurricul").css("display", "none");
 				$(".sample-info").css("display", "block");
 			})
 		})
+		$(document).ready(function(){
+			$(".navigation .notify-item .extra-information .edit-info").click(function(){
+				$(".Personal-info").css("display", "none");
+				$(".experiance").css("display", "none");
+				$(".skill").css("display", "none");
+				$(".education").css("display", "none");
+				$(".navigation").css("display", "none");
+				$(".sample-info").css("display", "none");
+				$(".extracurricul").css("display", "block");
+			})
+		})
+
 
 		$(document).ready(function(){
 			$(".navigation .notify-item .education-detail .edit-info").click(function(){
@@ -72,6 +87,7 @@
 				$(".skill").css("display", "none");
 				$(".sample-info").css("display", "none");
 				$(".navigation").css("display", "none");
+				$(".extracurricul").css("display", "none");
 				$(".education").css("display", "block");
 			})
 		})
@@ -103,6 +119,12 @@
 		$(document).ready(function(){
 			$(".education .headingpart .close").click(function(){
 				$(".education").css("display", "none");
+				$(".navigation").css("display", "block");
+			})
+		})
+		$(document).ready(function(){
+			$(".extracurricul .headingpart .close").click(function(){
+				$(".extracurricul").css("display", "none");
 				$(".navigation").css("display", "block");
 			})
 		})
@@ -296,7 +318,13 @@
 			          <spam class="edit-feild">Work Sample</spam>
 			           <spam class="edit-info"><i class="fa fa-pencil" aria-hidden="true"></i></spam>
 			           <span class="done-sign">&#10060;</span>
-			        </li>        
+			        </li> 
+			         <li class="notify-image extra-information">
+			          <img src="images/extra.png" alt="profile-pic">
+			          <spam class="edit-feild">Extra Curricular</spam>
+			           <spam class="edit-info"><i class="fa fa-pencil" aria-hidden="true"></i></spam>
+			           <span class="done-sign">&#9989;</span>
+			        </li>          
 				</ul>
 			</div>
 		</div>
@@ -1107,6 +1135,37 @@
 	</div>			
 </div>	
 
+<div class="extracurricul">
+	<div class="dropdown">
+	<div class="card">	
+		<div class="headingpart" style="background-color:#026B30">
+			<div class="close">x</div>
+			<h3>Extra Circular Activities</h3>
+		</div>
+		
+		<form class="needs-validation" novalidate  method="Post" action="person-detail">
+
+			<label class="mainlabel">Name of Extracurricular:-</label>
+			<div class="form-row">
+			   	<div class="col-md-9 col-10 mb-1">
+			      <input type="text" id="validationCustom01" placeholder="@ Name of extra curricular activities" required>
+			    </div>
+			</div>
+			<label class="mainlabel">Achievement description:-</label>
+			<div class="form-row">
+			   	<div class="col-md-7 col-12 mb-1">
+			     <textarea class="form-control" rows="4" id="comment" placeholder="Achievement in that field" ></textarea>
+			    </div>
+			</div>
+			
+			<div class="but">
+				<button type="submit" class="button" style="background-color: #026B30">Next</button>
+			</div>
+		</form>
+		</div>
+	</div>			
+</div>	
+
 
 <div class="display-sample">
 	<div class="row">
@@ -1118,7 +1177,7 @@
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 			    	<div class="carousel-item active"> 
-				      <div class="card" alt="First slide" style="background-color:blue">
+				      <div class="card" alt="First slide" style="background-color:#D5D8DC">
 						  <div class="card-body" style="text-align: center;">
 						    <h5 class="card-title">personal Information</h5>
 						    <p>Shubham <spam>Kumar</spam> <span>Raj</span></p>
@@ -1132,7 +1191,7 @@
 
 				    </div>
 				    <div class="carousel-item">
-				      <div class="card" alt="First slide" style="background-color:blue;">
+				      <div class="card" alt="First slide" style="background-color:#CCD1D1;">
 						  <div class="card-body" style="text-align: center;">
 						    <h5 class="card-title">Educational Information </h5>
 						    <p>B.Tech<spam>(Hons)</p>
@@ -1143,7 +1202,7 @@
 						</div>
 				    </div>
 				    <div class="carousel-item">
-				     <div class="card" alt="First slide" style="background-color:blue">
+				     <div class="card" alt="First slide" style="background-color:#D5D8DC">
 				     	
 						  <div class="card-body" style="text-align: center;">
 						    <h5 class="card-title">Experience Information </h5>
@@ -1156,7 +1215,7 @@
 						</div>
 				    </div>
 				    <div class="carousel-item">
-				     <div class="card"  alt="First slide" style="background-color:blue">
+				     <div class="card"  alt="First slide" style="background-color:#CCD1D1">
 				     	
 						  <div class="card-body" style="text-align: center;">
 						    <h5 class="card-title">Skill Information </h5>
@@ -1170,7 +1229,7 @@
 						</div>
 				    </div>
 				    <div class="carousel-item">
-				     <div class="card" alt="First slide" style="background-color:blue">
+				     <div class="card" alt="First slide" style="background-color:#D5D8DC">
 				     	
 						  <div class="card-body" style="text-align: center;">
 						    <h5 class="card-title">work Sample Information </h5>
@@ -1178,6 +1237,18 @@
 						    <p>Linkidin.com</p>
 						    <p>Medium.com</p>
 						    <p>portfolio.in</p>
+						  </div>
+						</div>
+				    </div>
+				     <div class="carousel-item">
+				     <div class="card" alt="First slide" style="background-color:#CCD1D1">
+				     	
+						  <div class="card-body" style="text-align: center;">
+						    <h4 class="card-title">Extracurricular Activities </h4>
+						    <h5>Dancing</h5>
+						    <p>Got 1st Prize in Annual Function Dance Competetion of HIT</p>
+						    <h5>Cricket</h5>
+						    <p>Caption of Computer Science department of HIT</p>
 						  </div>
 						</div>
 				    </div>

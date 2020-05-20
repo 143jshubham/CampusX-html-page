@@ -78,10 +78,11 @@
 	cursor: pointer;
 	margin-right:8px;
 	margin-top: 5px;
+	color: #fff;
 	
 }
 .display-sample .headingpart{
-	background-color:#3D8BF4;
+	background-color:#2E86C1;
 	text-align: center;
 	height: 50px;
 	color: #fff;
@@ -292,6 +293,7 @@
 .skill .card{
 	border: none;
 	width: 45rem;
+	padding:5px 0px;
 	box-shadow: 0px 2px 2px #DC143C;
 }
 .skill .headingpart{
@@ -324,7 +326,7 @@
 	margin-top:10px;
 }
 .skill .card .input-section input[type="text"]{
-    width:80%;
+    width:60%;
 	margin:20px 0px 50px 60px;
 	border-width:0px 0px 3px 0px;
 	outline: none;
@@ -350,9 +352,9 @@
     font-size:40px;
     font-weight:bold;
     outline: none;
-    margin-right:140px;
     float: right;
-    margin-top:5px;
+    margin-right:150px;
+    margin-bottom:40px;
     overflow: hidden;
 
 }
@@ -549,12 +551,22 @@
 	margin-left:350px;
 	display:none;
 }
+.extracurricul{
+	margin-top:15px;
+	margin-left:350px;
+	display:none;
+}
+.extracurricul .card {
+	box-shadow: 0px 4px 4px #026B30;
+	border:none;
+	width: 40rem;
+}
 .job .card,.internship .card{
 	box-shadow: 0px 4px 4px #ffce42;
 	border:none;
 	width: 40rem;
 }
-.job .headingpart,.internship .headingpart{
+.extracurricul .headingpart ,.job .headingpart,.internship .headingpart{
 	background-color:#ffce42;
 	text-align: center;
 	color:#fff;
@@ -565,20 +577,20 @@
 .job .needs-validation .form-check,.internship .needs-validation .form-check{
 	margin-left: 50px;
 }
-.job .needs-validation  label.mainlabel,.internship .needs-validation  label.mainlabel{
+ .extracurricul .needs-validation  label.mainlabel,.job .needs-validation  label.mainlabel,.internship .needs-validation  label.mainlabel{
 	display: block;
     margin-left:40px;
     margin-top:5px;
     font-weight:bold;
 
 }
-.job .headingpart .close ,.internship .headingpart .close{
+ .extracurricul .close ,.job .headingpart .close ,.internship .headingpart .close{
 	float: right; 
 	color: #fff; 
 	margin-right:20px;
 	 cursor: pointer;
 }
-.job .needs-validation .form-row input,.internship .needs-validation .form-row input{
+ .extracurricul .needs-validation .form-row input,.job .needs-validation .form-row input,.internship .needs-validation .form-row input{
 	padding:0px 0px;
 	margin:0px 0px 12px 40px;
 	border-width:0px 0px 3px 0px;
@@ -590,29 +602,29 @@
 	border-width:0px 0px 3px 0px;
 	outline: none;
 }
-.job .needs-validation .form-row .form-group label,.internship .needs-validation .form-row .form-group label{
+.extracurricul .needs-validation .form-row .form-group label,.job .needs-validation .form-row .form-group label,.internship .needs-validation .form-row .form-group label{
 	display: block;
     margin-left:40px;
     margin-top:5px;
     font-weight:bold;
 
 }
-.job .needs-validation .form-row input[type="text"]::placeholder,.internship .needs-validation .form-row input[type="text"]::placeholder{
+.extracurricul .needs-validation .form-row input[type="text"]::placeholder,.job .needs-validation .form-row input[type="text"]::placeholder,.internship .needs-validation .form-row input[type="text"]::placeholder{
 	padding-left:14px;
 	font-size:13px;
 }
 
-.job .needs-validation .form-row textarea,.internship .needs-validation .form-row textarea{
+.extracurricul .needs-validation .form-row textarea ,.job .needs-validation .form-row textarea,.internship .needs-validation .form-row textarea{
 	padding:0px 0px;
 	margin:0px 0px 12px 40px;
 	
 }
-.job .needs-validation .form-row textarea::placeholder,.internship .needs-validation .form-row textarea::placeholder{
+.extracurricul .needs-validation .form-row textarea::placeholder,.job .needs-validation .form-row textarea::placeholder,.internship .needs-validation .form-row textarea::placeholder{
 	padding-left:14px;
 	font-size:13px;
 	padding-top: 5px;
 }
-.job .button,.internship .button{
+.extracurricul .button ,.job .button,.internship .button{
   background-color: #ffce42; /* Green */
   border: none;
   color: white;
@@ -859,7 +871,12 @@
 		margin-left:15px;
 		display:none;
 	}
-	.job .card,.internship .card{
+	.extracurricul{
+		margin-top:15px;
+		margin-left:15px;
+		display:none;
+	}
+	.extracurricul .card,.job .card,.internship .card{
 		box-shadow: 0px 4px 4px #ffce42;
 		border:none;
 		width: 22rem;
@@ -868,14 +885,14 @@
 	.job .needs-validation .form-check,.internship .needs-validation .form-check{
 		margin-left: 5px;
 	}
-	.job .needs-validation  label.mainlabel,.internship .needs-validation  label.mainlabel{
+	.extracurricul .needs-validation  label.mainlabel,.job .needs-validation  label.mainlabel,.internship .needs-validation  label.mainlabel{
 		display: block;
 	    margin-left:4px;
 	    margin-top:5px;
 	    font-weight:bold;
 
 	}
-	.job .needs-validation .form-row input,.internship .needs-validation .form-row input{
+	.extracurricul .needs-validation input,.job .needs-validation .form-row input,.internship .needs-validation .form-row input{
 		padding:0px 0px;
 		margin:0px 0px 12px 4px;
 		border-width:0px 0px 3px 0px;
@@ -887,32 +904,32 @@
 		border-width:0px 0px 3px 0px;
 		outline: none;
 	}
-	.job .needs-validation .form-row .form-group label,.internship .needs-validation .form-row .form-group label{
+	.extracurricul .needs-validation .form-row .form-group label,.job .needs-validation .form-row .form-group label,.internship .needs-validation .form-row .form-group label{
 		display: block;
 	    margin-left:4px;
 	    margin-top:5px;
 	    font-weight:bold;
 
 	}
-	.diploma .needs-validation .form-row input[type="text"],.post-grad .needs-validation .form-row input[type="text"],.secondary .needs-validation .form-row input[type="text"],.Senior-secondary .needs-validation .form-row input[type="text"],.graduation .needs-validation .form-row input[type="text"]{
+	.extracurricul .needs-validation .form-row input[type="text"],.diploma .needs-validation .form-row input[type="text"],.post-grad .needs-validation .form-row input[type="text"],.secondary .needs-validation .form-row input[type="text"],.Senior-secondary .needs-validation .form-row input[type="text"],.graduation .needs-validation .form-row input[type="text"]{
 		padding:0px 0px;
 		width:90%;
 		margin:0px 0px 12px 4px;
 		border-width:0px 0px 3px 0px;
 		outline:none;
 		}
-	.job .needs-validation .form-row input[type="text"]::placeholder,.internship .needs-validation .form-row input[type="text"]::placeholder{
+	.extracurricul .needs-validation .form-row input[type="text"]::placeholder,.job .needs-validation .form-row input[type="text"]::placeholder,.internship .needs-validation .form-row input[type="text"]::placeholder{
 		padding-left:14px;
 		font-size:13px;
 	}
 
-	.job .needs-validation .form-row textarea,.internship .needs-validation .form-row textarea{
+	.extracurricul .needs-validation .form-row textarea,.job .needs-validation .form-row textarea,.internship .needs-validation .form-row textarea{
 		padding:0px 0px;
 		margin:0px 0px 12px 4px;
 		width:80%;
 		
 	}
-	.job .needs-validation .form-row textarea::placeholder,.internship .needs-validation .form-row textarea::placeholder{
+	.extracurricul .needs-validation .form-row textarea::placeholder,.job .needs-validation .form-row textarea::placeholder,.internship .needs-validation .form-row textarea::placeholder{
 		padding-left:14px;
 		font-size:13px;
 		padding-top: 5px;
